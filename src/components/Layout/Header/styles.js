@@ -22,7 +22,12 @@ export const StyledInner = styled.div`
 
 export const StyledLink = styled((props) => <Link {...props} />)`
   text-decoration: none;
-  color: #fff;
+  color: #e4e3e3;
   font-weight: 700;
   font-size: 22px;
+  transition: 0.2s ease-out;
+
+  &:hover {
+    color: #B1B0B0;
+  }
 `
