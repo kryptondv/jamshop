@@ -1,5 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import ProductCard from "../ProductCard"
 
 export default function ProductList({ heading }) {
   const data = useStaticQuery(graphql`
@@ -12,15 +13,16 @@ export default function ProductList({ heading }) {
             }
             slug
             name
+            excerpt
           }
-          excerpt
+          id
         }
       }
     }
   `)
 
   const products = data.allMarkdownRemark.nodes.filter(
-    ({ frontmatter }) => !frontmatter.lead
+    ({ frontmatter }) => frontmatter.slug
   )
 
   const { title, lead } = heading
@@ -28,6 +30,7 @@ export default function ProductList({ heading }) {
     <div>
       <h2>{title}</h2>
       <p>{lead}</p>
+      {products.map(({frontmatter, id}) => <ProductCard key={id} product={frontmatter}/>)}
     </div>
   )
 }
