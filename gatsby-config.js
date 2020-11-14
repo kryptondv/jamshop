@@ -13,6 +13,14 @@ module.exports = {
         path: `${__dirname}/src/assets`,
       },
     },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "products",
+        path: `${__dirname}/src/data/products`,
+      },
+    },
+    "gatsby-transformer-remark",
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
     {
@@ -38,7 +46,7 @@ module.exports = {
           },
           {
             family: `Roboto`,
-            variants: [ `700`],
+            variants: [`700`],
           },
         ],
       },
