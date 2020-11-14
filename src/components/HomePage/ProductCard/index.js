@@ -1,6 +1,6 @@
 import React, { useContext } from "react"
 
-import { CartContext } from '../../../contexts/cartContext';
+import { CartContext } from "../../../contexts/cartContext"
 
 import {
   StyledLink,
@@ -11,8 +11,7 @@ import {
 } from "./styles"
 
 export default function ProductCard({ product }) {
-  const { cart, setCart } = useContext(CartContext);
-
+  const { addProduct } = useContext(CartContext)
 
   const {
     excerpt,
@@ -21,17 +20,17 @@ export default function ProductCard({ product }) {
     slug,
   } = product
 
-  const addProduct = (e) => {
+  const addToCart = (e) => {
     e.preventDefault()
-    setCart([...cart, product])
+    addProduct(product)
   }
 
   return (
-      <StyledLink to={`products/${slug}`}>
-        <StyledImg src={publicURL} alt="" />
-        <StyledHeading>{name}</StyledHeading>
-        <StyledDescription>{excerpt}</StyledDescription>
-        <StyledButton onClick={(e) => addProduct(e)}>+</StyledButton>
-      </StyledLink>
+    <StyledLink to={`products/${slug}`}>
+      <StyledImg src={publicURL} alt="" />
+      <StyledHeading>{name}</StyledHeading>
+      <StyledDescription>{excerpt}</StyledDescription>
+      <StyledButton onClick={(e) => addToCart(e)}>+</StyledButton>
+    </StyledLink>
   )
 }
