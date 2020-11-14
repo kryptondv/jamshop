@@ -5,10 +5,17 @@ export const StyledContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   width: 42px;
+  z-index: 20;
+  cursor: pointer;
 `
 
 export const StyledIconContainer = styled.div`
   position: relative;
+`
+
+export const StyledChevron = styled.img`
+  transition: .2s ease-out;
+  transform: ${props => props.flipped ? 'rotateX(180deg)' : 'initial'}
 `
 
 export const StyledCounter = styled.span`
@@ -19,6 +26,7 @@ export const StyledCounter = styled.span`
   line-height: 1;
   font-size: 8px;
   background: #301346;
+  /* #AB528D */
   display: flex;
   align-items: center;
   justify-content: center;

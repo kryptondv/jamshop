@@ -3,18 +3,25 @@ import CartIcon from "../../../assets/icons/cart.svg"
 import Chevron from "../../../assets/icons/chevron.svg"
 import { CartContext } from '../../../contexts/cartContext';
 
-import { StyledContainer, StyledIconContainer, StyledCounter } from "./styles"
+import { StyledContainer, StyledIconContainer, StyledCounter, StyledChevron } from "./styles"
 
 export default function CartNav() {
-  const { cart } = useContext(CartContext);
+  const { cart, cartOpen, setCartOpen } = useContext(CartContext);
+
+  const handleIconClick = () => {
+    if(cart.length > 0) {
+      setCartOpen(prev => !prev)
+    }
+  }
+
 
   return (
-    <StyledContainer>
+    <StyledContainer onClick={handleIconClick}>
       <StyledIconContainer>
         <img src={CartIcon} alt="cart icon" />
         <StyledCounter>{cart.length}</StyledCounter>
       </StyledIconContainer>
-      <img src={Chevron} alt="chevron" />
+      <StyledChevron src={Chevron} alt="chevron" flipped={cartOpen}/>
     </StyledContainer>
   )
 }
