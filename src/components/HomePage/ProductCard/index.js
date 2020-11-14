@@ -1,5 +1,6 @@
-import React from "react"
-import { Link } from "gatsby"
+import React, { useContext } from "react"
+
+import { CartContext } from '../../../contexts/cartContext';
 
 import {
   StyledLink,
@@ -10,6 +11,9 @@ import {
 } from "./styles"
 
 export default function ProductCard({ product }) {
+  const { cart, setCart } = useContext(CartContext);
+
+
   const {
     excerpt,
     image: { publicURL },
@@ -19,7 +23,7 @@ export default function ProductCard({ product }) {
 
   const addProduct = (e) => {
     e.preventDefault()
-    console.log(name)
+    setCart([...cart, product])
   }
 
   return (

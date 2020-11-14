@@ -12,6 +12,7 @@ export default function ProductList({ heading }) {
               publicURL
             }
             slug
+            price
             name
             excerpt
           }
