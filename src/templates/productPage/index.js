@@ -1,9 +1,13 @@
 import React from 'react';
 
+import Product from '../../components/Product';
+import SEO from '../../components/SEO';
+
 export default function ProductPage({ data }) {
-  const { name, description, image, price, tag } = data.markdownRemark.frontmatter; 
+  const product = data.markdownRemark.frontmatter; 
   return <div>
-    
+    <SEO title = {name} />
+    <Product product={product}/>
   </div>
 }
 
