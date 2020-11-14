@@ -33,6 +33,10 @@ export const StyledCart = styled.div`
   border-radius: 4px;
 `
 
+export const StyledButton = styled.button`
+
+`
+
 export const Container = styled.div`
   width: 90%;
   max-width: 1480px;
