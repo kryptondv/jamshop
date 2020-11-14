@@ -16,12 +16,12 @@ export default function CartNav() {
 
 
   return (
-    <StyledContainer onClick={handleIconClick}>
+    <StyledContainer onClick={handleIconClick} active={cart.length > 0}>
       <StyledIconContainer>
         <img src={CartIcon} alt="cart icon" />
-        <StyledCounter>{cart.length}</StyledCounter>
+        <StyledCounter active={cart.length > 0}>{cart.length}</StyledCounter>
       </StyledIconContainer>
-      <StyledChevron src={Chevron} alt="chevron" flipped={cartOpen}/>
+      <StyledChevron src={Chevron} alt="chevron" flipped={cartOpen} />
     </StyledContainer>
   )
 }

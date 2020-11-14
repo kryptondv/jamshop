@@ -11,7 +11,7 @@ export default function Layout({ children }) {
 
   return (
     <>
-      <GlobalStyle />
+      <GlobalStyle cartOpen={cartOpen} />
       <Header />
       {cartOpen ? <Cart /> : null}
       <main>{children}</main>

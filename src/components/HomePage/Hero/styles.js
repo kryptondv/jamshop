@@ -22,7 +22,7 @@ export const StyledHeading = styled.h1`
     content: url("${HeroDecor}");
     position: absolute;
     top: -15px;
-    right: -20%;
+    right: -95px;
     z-index: -1;
   }
 `
@@ -40,10 +40,11 @@ export const StyledButton = styled.button`
   line-height: 16px;
   color: #fff;
   cursor: pointer;
-  transition: .2s ease-out;
+  transition: 0.2s ease-out;
 
   &:hover {
     background: #923974;
+    box-shadow: 0 0 10px rgba(171, 82, 141, .5);
   }
 `
 

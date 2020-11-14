@@ -14,6 +14,13 @@ export const StyledLink = styled((props) => <Link {...props} />)`
   padding: 32px 22px 22px 22px;
   position: relative;
   text-decoration: none;
+  transition: 0.2s ease-out;
+
+  &:hover {
+    transform: translateY(-10px);
+    background: #261234;
+    box-shadow: 0 0 10px rgba(150, 147, 147, .3);
+  }
 `
 
 export const StyledImg = styled.img`
@@ -50,4 +57,17 @@ export const StyledButton = styled.button`
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s ease-out;
+  outline: none;
+
+  &:hover {
+    background: #923974;
+    box-shadow: 0 0 10px rgba(171, 82, 141, 0.4);
+  }
+
+  &:active {
+    background: #fff;
+    color: #ab528d;
+  }
 `

@@ -6,7 +6,7 @@ export const StyledContainer = styled.div`
   justify-content: space-between;
   width: 42px;
   z-index: 20;
-  cursor: pointer;
+  cursor: ${(props) => (props.active ? "pointer" : "default")}; ;
 `
 
 export const StyledIconContainer = styled.div`
@@ -14,8 +14,8 @@ export const StyledIconContainer = styled.div`
 `
 
 export const StyledChevron = styled.img`
-  transition: .2s ease-out;
-  transform: ${props => props.flipped ? 'rotateX(180deg)' : 'initial'}
+  transition: 0.2s ease-out;
+  transform: ${(props) => (props.flipped ? "rotateX(180deg)" : "initial")};
 `
 
 export const StyledCounter = styled.span`
@@ -25,8 +25,7 @@ export const StyledCounter = styled.span`
   height: 13px;
   line-height: 1;
   font-size: 8px;
-  background: #301346;
-  /* #AB528D */
+  background: ${(props) => (props.active ? "#AB528D" : "#301346")};
   display: flex;
   align-items: center;
   justify-content: center;
