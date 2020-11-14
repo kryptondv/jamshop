@@ -1,5 +1,16 @@
-import styled from "styled-components"
+import styled, { keyframes } from "styled-components"
 import HeroDecor from "../../../assets/elements/hero_decor.svg"
+
+const fadeUp = keyframes`
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+  }
+`
 
 export const StyledHero = styled.section`
   height: 697px;
@@ -25,9 +36,18 @@ export const StyledHeading = styled.h1`
     right: -95px;
     z-index: -1;
   }
-`
-export const StyledDecor = styled.img``
 
+  span {
+    display: block;
+    opacity: 0;
+    animation: ${fadeUp} .5s forwards;
+    overflow: hidden;
+
+    &:nth-of-type(1) {
+      animation-delay: 0.1s;
+    }
+  }
+`
 export const StyledButton = styled.button`
   width: 146px;
   height: 40px;
@@ -41,10 +61,9 @@ export const StyledButton = styled.button`
   color: #fff;
   cursor: pointer;
   transition: 0.2s ease-out;
-
   &:hover {
     background: #923974;
-    box-shadow: 0 0 10px rgba(171, 82, 141, .5);
+    box-shadow: 0 0 10px rgba(171, 82, 141, 0.5);
   }
 `
 

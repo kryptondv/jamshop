@@ -22,9 +22,8 @@ function HomepageHero() {
         </Left>
         <Right>
           <StyledHeading>
-            Don't waste time
-            <br />
-            on boring things
+            <span>Don't waste time</span>
+            <span>on boring things</span>
           </StyledHeading>
           <StyledButton>GO EXPLORE</StyledButton>
         </Right>
