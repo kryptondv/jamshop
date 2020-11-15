@@ -6,7 +6,6 @@ export const StyledContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* width: 42px; */
   position: relative;
   z-index: 20;
   cursor: ${(props) => (props.active ? "pointer" : "default")}; ;

@@ -61,31 +61,8 @@ export const StyledDescription = styled.p`
   }
 `
 
-export const StyledButton = styled.button`
+export const ButtonContainer = styled.div`
   position: absolute;
   right: 10px;
   bottom: 10px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 37px;
-  color: #fff;
-  background: #ab528d;
-  border: none;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: 0.2s ease-out;
-  outline: none;
-
-  &:hover {
-    background: #923974;
-    box-shadow: 0 0 10px rgba(171, 82, 141, 0.4);
-  }
-
-  &:active {
-    background: #fff;
-    color: #ab528d;
-  }
 `

@@ -2,11 +2,11 @@ import React, { useContext, useRef } from "react"
 import { CartContext } from "../../contexts/cartContext"
 
 import CartItem from "./CartItem"
+import Button from "../Common/Button"
 
 import {
   StyledCartOverlay,
   StyledCart,
-  StyledButton,
   Container,
   ItemsContainer,
 } from "./styles"
@@ -17,7 +17,9 @@ export default function Cart() {
   const cartEl = useRef(false)
 
   const renderItems = () => {
-    return cart.map((item, i) => <CartItem key={item.slug + i} item={item} number={i+1}/>)
+    return cart.map((item, i) => (
+      <CartItem key={item.slug + i} item={item} number={i + 1} />
+    ))
   }
 
   const handleOutsideClick = (target) => {
@@ -31,7 +33,16 @@ export default function Cart() {
       <Container>
         <StyledCart ref={cartEl}>
           <ItemsContainer>{renderItems()}</ItemsContainer>
-          <StyledButton>Submit</StyledButton>
+          <Button
+            w="89"
+            h="27"
+            fontSize="12px"
+            lineHeight="14px"
+            color="#eeeeee"
+            fontFamily="Roboto, sans-serif"
+          >
+            Submit
+          </Button>
         </StyledCart>
       </Container>
     </StyledCartOverlay>

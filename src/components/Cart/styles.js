@@ -37,24 +37,6 @@ export const StyledCart = styled.div`
   align-items: flex-end;
 `
 
-export const StyledButton = styled.button`
-  width: 89px;
-  height: 27px;
-  background: #ab528d;
-  font-size: 12px;
-  line-height: 14px;
-  color: #eeeeee;
-  text-transform: uppercase;
-  border: none;
-  cursor: pointer;
-  transition: 0.2s ease-out;
-
-  &:hover {
-    background: #923974;
-    box-shadow: 0 0 10px rgba(171, 82, 141, 0.5);
-  }
-`
-
 export const Container = styled.div`
   width: 90%;
   max-width: 1480px;

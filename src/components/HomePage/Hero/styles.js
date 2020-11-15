@@ -84,27 +84,6 @@ export const StyledHeading = styled.h1`
 export const StyledImage = styled.img`
   width: clamp(200px, 40vw, 393px);
 `
-
-
-export const StyledButton = styled.button`
-  width: 146px;
-  height: 40px;
-  background: #ab528d;
-  border: none;
-  border-radius: 4px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  font-size: 13px;
-  line-height: 16px;
-  color: #fff;
-  cursor: pointer;
-  transition: 0.2s ease-out;
-  &:hover {
-    background: #923974;
-    box-shadow: 0 0 10px rgba(171, 82, 141, 0.5);
-  }
-`
-
 export const Container = styled.div`
   width: 90%;
   max-width: 1400px;

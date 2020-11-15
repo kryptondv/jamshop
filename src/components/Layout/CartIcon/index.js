@@ -22,7 +22,7 @@ export default function CartNav() {
         <CartIcon />
         <StyledCounter active={cart.length > 0}>{cart.length}</StyledCounter>
       </StyledIconContainer>
-      <StyledChevron src={Chevron} alt="chevron" flipped={cartOpen} />
+      <StyledChevron flipped={cartOpen ? 1 : 0} />
     </StyledContainer>
   )
 }

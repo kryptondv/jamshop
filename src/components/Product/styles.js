@@ -42,28 +42,6 @@ export const StyledPrice = styled.span`
   left: -5px;
 `
 
-export const StyledButton = styled.button`
-  width: 146px;
-  height: 40px;
-  left: 777px;
-  top: 483px;
-  background: #ab528d;
-  border-radius: 4px;
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 15px;
-  text-align: center;
-  color: #fff;
-  text-transform: uppercase;
-  border: none;
-  cursor: pointer;
-  transition: 0.2s ease-out;
-
-  &:hover {
-    background: #923974;
-    box-shadow: 0 0 10px rgba(171, 82, 141, 0.5);
-  }
-`
 
 export const ProductContainer = styled.div`
   width: 90%;

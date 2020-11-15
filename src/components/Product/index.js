@@ -1,5 +1,6 @@
 import React, { useContext } from "react"
 import { CartContext } from "../../contexts/cartContext"
+import Button from "../Common/Button"
 
 import {
   ProductContainer,
@@ -10,7 +11,6 @@ import {
   StyledHeading,
   StyledDescription,
   StyledPrice,
-  StyledButton,
 } from "./styles"
 
 export default function Product({ product }) {
@@ -34,7 +34,19 @@ export default function Product({ product }) {
         <StyledHeading>{name}</StyledHeading>
         <StyledDescription>{description}</StyledDescription>
         <StyledPrice>${price}</StyledPrice>
-        <StyledButton onClick={() => addProduct(product)}>Add to cart</StyledButton>
+        <Button
+          handleClick={() => addProduct(product)}
+          w="146"
+          h="40"
+          radius="4px"
+          fontFamily="Roboto, sans-serif"
+          fontSize="13px"
+          fontWeight="700"
+          lineHeight="15px"
+          color="#fff"
+        >
+          Add to cart
+        </Button>
       </Right>
     </ProductContainer>
   )

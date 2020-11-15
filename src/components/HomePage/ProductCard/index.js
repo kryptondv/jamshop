@@ -1,13 +1,14 @@
 import React, { useContext } from "react"
 
 import { CartContext } from "../../../contexts/cartContext"
+import Button from "../../Common/Button"
 
 import {
   StyledLink,
   StyledImg,
   StyledHeading,
   StyledDescription,
-  StyledButton,
+  ButtonContainer,
 } from "./styles"
 
 export default function ProductCard({ product }) {
@@ -30,7 +31,21 @@ export default function ProductCard({ product }) {
       <StyledImg src={publicURL} alt="" />
       <StyledHeading>{name}</StyledHeading>
       <StyledDescription>{excerpt}</StyledDescription>
-      <StyledButton onClick={(e) => addToCart(e)}>+</StyledButton>
+      <ButtonContainer>
+        <Button
+          handleClick={(e) => addToCart(e)}
+          w="44"
+          h="44"
+          radius="50%"
+          fontFamily="Roboto, sans-serif"
+          fontSize="32px"
+          fontWeight="700"
+          lineHeight="37px"
+          color="#fff"
+        >
+          +
+        </Button>
+      </ButtonContainer>
     </StyledLink>
   )
 }
