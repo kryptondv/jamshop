@@ -2,6 +2,11 @@ import styled from "styled-components"
 
 export const StyledImg = styled.img`
   width: 329px;
+
+  @media (max-width: 768px) {
+    width: 40vw;
+    min-width: 200px;
+  }
 `
 export const StyledTag = styled.span`
   display: block;
@@ -20,7 +25,7 @@ export const StyledHeading = styled.h2`
 `
 
 export const StyledDescription = styled.p`
-  width: 410px;
+  max-width: 410px;
   font-size: 18px;
   line-height: 21px;
   color: #c4c4c4;
@@ -62,7 +67,7 @@ export const StyledButton = styled.button`
 
 export const ProductContainer = styled.div`
   width: 90%;
-  max-width: 1480px;
+  max-width: 1400px;
   margin: 0 auto;
   height: 100vh;
   min-height: 600px;
@@ -70,6 +75,13 @@ export const ProductContainer = styled.div`
   align-items: center;
   justify-content: center;
   font-family: "Roboto", sans-serif;
+
+  @media (max-width: 768px) {
+    padding: 100px 0 50px;
+    height: 100%;
+    min-height: 100vh;
+    flex-direction: column;
+  }
 `
 
 export const Left = styled.div`
@@ -77,8 +89,20 @@ export const Left = styled.div`
   padding-right: 64px;
   display: flex;
   justify-content: flex-end;
+
+  @media (max-width: 768px) {
+    padding: 0;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 `
 export const Right = styled.div`
   width: 50%;
   padding-left: 64px;
+
+  @media (max-width: 768px) {
+    padding: 0;
+    width: 100%;
+  }
 `
