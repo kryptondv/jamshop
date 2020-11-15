@@ -3,6 +3,7 @@ import CartIcon from "../../../assets/icons/cart.svg"
 import Chevron from "../../../assets/icons/chevron.svg"
 import { CartContext } from '../../../contexts/cartContext';
 
+
 import { StyledContainer, StyledIconContainer, StyledCounter, StyledChevron } from "./styles"
 
 export default function CartNav() {
@@ -18,7 +19,7 @@ export default function CartNav() {
   return (
     <StyledContainer onClick={handleIconClick} active={cart.length > 0}>
       <StyledIconContainer>
-        <img src={CartIcon} alt="cart icon" />
+        <CartIcon />
         <StyledCounter active={cart.length > 0}>{cart.length}</StyledCounter>
       </StyledIconContainer>
       <StyledChevron src={Chevron} alt="chevron" flipped={cartOpen} />

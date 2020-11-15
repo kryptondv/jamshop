@@ -11,7 +11,7 @@ export const StyledHeader = styled.header`
 
 export const StyledInner = styled.div`
   width: 90%;
-  max-width: 1480px;
+  max-width: 1400px;
   height: 100%;
   margin: 0 auto;
   display: flex;
