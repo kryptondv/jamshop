@@ -18,6 +18,10 @@ export const StyledInner = styled.div`
   justify-content: space-between;
   align-items: center;
   padding-right: 40px;
+
+  @media (max-width: 780px) {
+    padding-right: 22px;
+  }
 `
 
 export const StyledLink = styled((props) => <Link {...props} />)`
