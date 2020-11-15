@@ -6,7 +6,7 @@ import SEO from '../../components/SEO';
 export default function ProductPage({ data }) {
   const product = data.markdownRemark.frontmatter; 
   return <div>
-    <SEO title = {name} />
+    <SEO title = {product.name} />
     <Product product={product}/>
   </div>
 }
@@ -24,6 +24,7 @@ export const query = graphql`
           publicURL
         }
       }
+      id
     }
   }
 `

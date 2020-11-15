@@ -33,6 +33,8 @@ export const StyledPrice = styled.span`
   line-height: 26px;
   color: #eeeeee;
   margin-bottom: 17px;
+  position: relative;
+  left: -5px;
 `
 
 export const StyledButton = styled.button`
@@ -49,7 +51,6 @@ export const StyledButton = styled.button`
   color: #fff;
   text-transform: uppercase;
   border: none;
-
   cursor: pointer;
   transition: 0.2s ease-out;
 
