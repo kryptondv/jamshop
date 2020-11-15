@@ -5,13 +5,13 @@ import { CartContext } from "../../../contexts/cartContext"
 import CartIcon from "../../../assets/icons/cart.svg"
 
 import {
-  StyledContainer,
+  StyledCartNavBtn ,
   StyledIconContainer,
   StyledCounter,
   StyledChevron,
 } from "./styles"
 
-export default function CartNav() {
+export default function CartNavBtn() {
   const { cart, cartOpen, setCartOpen } = useContext(CartContext)
 
   const handleIconClick = () => {
@@ -21,12 +21,12 @@ export default function CartNav() {
   }
 
   return (
-    <StyledContainer onClick={handleIconClick} active={cart.length > 0}>
+    <StyledCartNavBtn onClick={handleIconClick} active={cart.length > 0}>
       <StyledIconContainer>
         <CartIcon />
         <StyledCounter active={cart.length > 0}>{cart.length}</StyledCounter>
       </StyledIconContainer>
       <StyledChevron flipped={cartOpen ? 1 : 0} />
-    </StyledContainer>
+    </StyledCartNavBtn >
   )
 }

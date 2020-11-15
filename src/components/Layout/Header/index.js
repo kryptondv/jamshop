@@ -1,6 +1,6 @@
 import React from "react"
 
-import CartIcon from "../CartIcon"
+import CartNavBtn from "../CartNavBtn"
 
 import { StyledHeader, StyledInner, StyledLink } from "./styles"
 
@@ -9,7 +9,7 @@ export default function Header() {
     <StyledHeader>
       <StyledInner>
         <StyledLink to="/">JAM SHOP</StyledLink>
-        <CartIcon />
+        <CartNavBtn />
       </StyledInner>
     </StyledHeader>
   )

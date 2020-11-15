@@ -1,13 +1,17 @@
-import React from 'react';
+import React from "react"
 import styled from "styled-components"
 import Chevron from "../../../assets/icons/chevron.svg"
 
-export const StyledContainer = styled.div`
+export const StyledCartNavBtn = styled.button`
   position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border: none;
+  background: transparent;
+  color: white;
   z-index: 20;
+  outline: none;
   cursor: ${(props) => (props.active ? "pointer" : "default")};
 `
 
