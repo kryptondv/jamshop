@@ -16,5 +16,6 @@ export const GlobalStyle = createGlobalStyle`
     position: ${(props) => (props.cartOpen ? "fixed" : "static")};
     width: 100%;
     overflow-y: scroll;
+    -webkit-tap-highlight-color: transparent;
   }
 `
