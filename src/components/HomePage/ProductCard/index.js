@@ -1,4 +1,5 @@
 import React, { useContext } from "react"
+import PropTypes from "prop-types"
 
 import { CartContext } from "../../../contexts/cartContext"
 
@@ -49,4 +50,13 @@ export default function ProductCard({ product }) {
       </ButtonContainer>
     </StyledLink>
   )
+}
+
+ProductCard.propTypes = {
+  product: PropTypes.shape({
+    excerpt: PropTypes.string.isRequired,
+    image: PropTypes.object.isRequired,
+    name: PropTypes.string.isRequired,
+    slug: PropTypes.string.isRequired,
+  }),
 }

@@ -4,13 +4,13 @@ export const StyledButton = styled.button`
   width: ${(props) => props.w}px;
   height: ${(props) => props.h}px;
   border: none;
-  border-radius: ${(props) => (props.radius ? props.radius : "0")};
+  border-radius: ${(props) => props.radius};
   background: #ab528d;
   color: ${(props) => props.color};
   font-family: ${(props) => props.fontFamily};
   font-weight: ${(props) => props.fontWeight};
   font-size: ${(props) => props.fontSize};
-  line-height: ${(props) => (props.lineHeight ? props.lineHeight : "1")};
+  line-height: ${(props) => props.lineHeight};
   text-transform: uppercase;
   transition: 0.2s ease-out;
   cursor: pointer;

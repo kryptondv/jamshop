@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import {
@@ -30,7 +31,8 @@ export default function ProductList({ heading }) {
   `)
 
   const products = data.allMarkdownRemark.nodes.filter(
-    ({ frontmatter }) => frontmatter.slug)
+    ({ frontmatter }) => frontmatter.slug
+  )
 
   const { title, lead } = heading
   return (
@@ -42,4 +44,11 @@ export default function ProductList({ heading }) {
       <ProductCarousel products={products} />
     </StyledProductList>
   )
+}
+
+ProductList.propTypes = {
+  heading: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    lead: PropTypes.string.isRequired,
+  }),
 }
