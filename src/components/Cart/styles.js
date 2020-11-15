@@ -65,4 +65,20 @@ export const Container = styled.div`
 export const ItemsContainer = styled.div`
   width: 100%;
   flex-grow: 1;
+  overflow: auto;
+  margin-bottom: 10px;
+  max-height: 200px;
+  padding-right: 2px;
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(245, 245, 245, 0.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(245, 245, 245, 0.3);
+  }
+  ::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px #ab528d;
+    -webkit-box-shadow: inset 0 0 6px #ab528d;
+  }
 `
