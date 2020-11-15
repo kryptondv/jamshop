@@ -1,9 +1,9 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-import ProductCard from "../ProductCard"
 
 import { StyledHeading, StyledLead, Container } from "./styles"
+import ProductCarousel from "../ProductCarousel"
 
 export default function ProductList({ heading }) {
   const data = useStaticQuery(graphql`
@@ -36,9 +36,7 @@ export default function ProductList({ heading }) {
         <StyledHeading>{title}</StyledHeading>
         <StyledLead>{lead}</StyledLead>
       </Container>
-      {products.map(({ frontmatter, id }) => (
-        <ProductCard key={id} product={frontmatter} />
-      ))}
+      <ProductCarousel products={products}/>
     </div>
   )
 }

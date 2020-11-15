@@ -14,10 +14,10 @@ export const StyledLink = styled((props) => <Link {...props} />)`
   padding: 32px 22px 22px 22px;
   position: relative;
   text-decoration: none;
-  transition: 0.2s ease-out;
-
+  transition: 0.1s ease-out;
+ 
   &:hover {
-    transform: translateY(-10px);
+    transform: scale(0.99);
     background: #261234;
     box-shadow: 0 0 10px rgba(150, 147, 147, .3);
   }
