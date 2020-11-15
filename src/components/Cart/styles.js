@@ -31,10 +31,28 @@ export const StyledCart = styled.div`
   right: 0;
   border: 2px solid #f5f5f5;
   border-radius: 4px;
+  padding: 37px 30px 23px 19px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 `
 
 export const StyledButton = styled.button`
+  width: 89px;
+  height: 27px;
+  background: #ab528d;
+  font-size: 12px;
+  line-height: 14px;
+  color: #eeeeee;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease-out;
 
+  &:hover {
+    background: #923974;
+    box-shadow: 0 0 10px rgba(171, 82, 141, 0.5);
+  }
 `
 
 export const Container = styled.div`
@@ -44,4 +62,7 @@ export const Container = styled.div`
   margin: 0 auto;
   position: relative;
 `
-
+export const ItemsContainer = styled.div`
+  width: 100%;
+  flex-grow: 1;
+`
