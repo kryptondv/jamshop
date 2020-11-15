@@ -15,7 +15,7 @@ export const StyledLead = styled.p`
   font-size: 16px;
   line-height: 20px;
   color: #c4c4c4;
-  width: 373px;
+  max-width: 373px;
   margin-bottom: 62px;
 `
 
@@ -23,4 +23,7 @@ export const Container = styled.div`
   width: 90%;
   max-width: 1180px;
   margin: 0 auto;
+  @media (max-width: 780px) {
+    text-align: center;
+  }
 `

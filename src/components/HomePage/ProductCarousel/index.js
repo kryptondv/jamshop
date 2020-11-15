@@ -5,13 +5,14 @@ import "slick-carousel/slick/slick-theme.css"
 
 import ProductCard from "../ProductCard"
 
-import ArrowLeft from "../../../assets/icons/arrow-left.svg"
-import ArrowRight from "../../../assets/icons/arrow-right.svg"
+
 
 import {
   SliderContainer,
   SliderItem,
   SliderButton,
+  ArrowLeft,
+  ArrowRight,
   BtnContainerLeft,
   BtnContainerRight,
 } from "./styles"
@@ -67,7 +68,7 @@ export default function ProductCarousel({ products }) {
       </BtnContainerLeft>
       <Slider {...settings} ref={SliderEl}>
         {products.map(({ frontmatter, id }) => (
-          <SliderItem>
+          <SliderItem key={id}>
             <ProductCard product={frontmatter} />
           </SliderItem>
         ))}

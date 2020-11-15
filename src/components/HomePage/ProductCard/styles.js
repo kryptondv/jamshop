@@ -15,17 +15,30 @@ export const StyledLink = styled((props) => <Link {...props} />)`
   position: relative;
   text-decoration: none;
   transition: 0.1s ease-out;
- 
+
   &:hover {
     transform: scale(0.99);
     background: #261234;
-    box-shadow: 0 0 10px rgba(150, 147, 147, .3);
+    box-shadow: 0 0 10px rgba(150, 147, 147, 0.3);
+  }
+
+  @media (max-width: 450px) {
+    width: 250px;
+    height: 290px;
+  }
+
+  @media (max-width: 380px) {
+    width: 240px;
   }
 `
 
 export const StyledImg = styled.img`
   align-self: center;
   margin-bottom: 37px;
+
+  @media (max-width: 380px) {
+    margin-bottom: 20px;
+  }
 `
 
 export const StyledHeading = styled.h3`
@@ -40,7 +53,12 @@ export const StyledDescription = styled.p`
   font-size: 14px;
   color: #c4c4c4;
   margin: 0;
-  width: 192px;
+  max-width: 192px;
+
+  @media (max-width: 380px) {
+    max-width: 170px;
+    margin-bottom: 20px;
+  }
 `
 
 export const StyledButton = styled.button`

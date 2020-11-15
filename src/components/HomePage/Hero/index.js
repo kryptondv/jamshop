@@ -2,10 +2,10 @@ import React from "react"
 
 import HeroBackground from "../../../assets/elements/hero_background.svg"
 import HeroImage from "../../../assets/elements/monitor.svg"
-import HeroDecor from "../../../assets/elements/hero_decor.svg"
 
 import {
   StyledHero,
+  StyledImage, 
   StyledHeading,
   StyledButton,
   Container,
@@ -18,7 +18,7 @@ function HomepageHero() {
     <StyledHero background={HeroBackground}>
       <Container>
         <Left>
-          <img src={HeroImage} alt="Vector Monitor" />
+          <StyledImage src={HeroImage} alt="Vector Monitor" />
         </Left>
         <Right>
           <StyledHeading>
