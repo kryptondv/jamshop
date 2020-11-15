@@ -23,10 +23,10 @@ export const StyledCartOverlay = styled.div`
 `
 
 export const StyledCart = styled.div`
-  width: 281px;
-  height: 276px;
   position: absolute;
   top: 59px;
+  width: 281px;
+  height: 276px;
   background: #220538;
   right: 0;
   border: 2px solid #f5f5f5;
@@ -52,6 +52,7 @@ export const ItemsContainer = styled.div`
   max-height: 200px;
   padding-right: 2px;
 
+  /* custom scrollbar */
   ::-webkit-scrollbar {
     width: 6px;
   }

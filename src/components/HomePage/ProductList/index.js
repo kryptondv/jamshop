@@ -30,8 +30,7 @@ export default function ProductList({ heading }) {
   `)
 
   const products = data.allMarkdownRemark.nodes.filter(
-    ({ frontmatter }) => frontmatter.slug
-  )
+    ({ frontmatter }) => frontmatter.slug)
 
   const { title, lead } = heading
   return (

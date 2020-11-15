@@ -3,22 +3,22 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 
 export const StyledLink = styled((props) => <Link {...props} />)`
-  width: 265px;
-  height: 273px;
-  border: 3px solid #969393;
-  border-radius: 2px;
-  background: #331f41;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 265px;
+  height: 273px;
   padding: 32px 22px 22px 22px;
-  position: relative;
+  border: 3px solid #969393;
+  border-radius: 2px;
+  background: #331f41;
   text-decoration: none;
   transition: 0.1s ease-out;
 
   &:hover {
-    transform: scale(0.99);
     background: #261234;
+    transform: scale(0.99);
     box-shadow: 0 0 10px rgba(150, 147, 147, 0.3);
   }
 
@@ -42,18 +42,18 @@ export const StyledImg = styled.img`
 `
 
 export const StyledHeading = styled.h3`
-  text-transform: uppercase;
-  font-size: 18px;
-  line-height: 22px;
   margin-bottom: 3px;
   color: #eeeeee;
+  font-size: 1.125rem;
+  line-height: 22px;
+  text-transform: uppercase;
 `
 
 export const StyledDescription = styled.p`
-  font-size: 14px;
-  color: #c4c4c4;
-  margin: 0;
   max-width: 192px;
+  margin: 0;
+  color: #c4c4c4;
+  font-size: 0.875rem;
 
   @media (max-width: 380px) {
     max-width: 170px;

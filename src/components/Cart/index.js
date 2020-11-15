@@ -1,4 +1,5 @@
 import React, { useContext, useRef } from "react"
+
 import { CartContext } from "../../contexts/cartContext"
 
 import CartItem from "./CartItem"
@@ -14,7 +15,7 @@ import {
 export default function Cart() {
   const { cart, setCartOpen } = useContext(CartContext)
 
-  const cartEl = useRef(false)
+  const cartEl = useRef(null)
 
   const renderItems = () => {
     return cart.map((item, i) => (

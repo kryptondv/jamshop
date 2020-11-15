@@ -8,7 +8,6 @@ import {
   StyledHero,
   StyledImage,
   StyledHeading,
-  StyledButton,
   Container,
   Left,
   Right,

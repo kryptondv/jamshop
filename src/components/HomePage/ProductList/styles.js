@@ -1,22 +1,22 @@
 import styled from "styled-components"
 
 export const StyledProductList = styled.div`
-  padding-top: 63px;
   margin-bottom: 135px;
+  padding-top: 63px;
 `
 
 export const StyledHeading = styled.h2`
-  font-size: 28px;
-  line-height: 34px;
-  color: #eeeeee;
   margin-bottom: 20px;
+  color: #eeeeee;
+  font-size: 1.75rem;
+  line-height: 34px;
 `
 export const StyledLead = styled.p`
-  font-size: 16px;
-  line-height: 20px;
-  color: #c4c4c4;
   max-width: 373px;
   margin-bottom: 62px;
+  color: #c4c4c4;
+  font-size: 1rem;
+  line-height: 20px;
 `
 
 export const Container = styled.div`

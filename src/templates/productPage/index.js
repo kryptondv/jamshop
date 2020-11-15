@@ -1,14 +1,17 @@
-import React from 'react';
+import React from "react"
+import { graphql } from "gatsby"
 
-import Product from '../../components/Product';
-import SEO from '../../components/SEO';
+import Product from "../../components/Product"
+import SEO from "../../components/SEO"
 
 export default function ProductPage({ data }) {
-  const product = data.markdownRemark.frontmatter; 
-  return <div>
-    <SEO title = {product.name} />
-    <Product product={product}/>
-  </div>
+  const product = data.markdownRemark.frontmatter
+  return (
+    <div>
+      <SEO title={product.name} />
+      <Product product={product} />
+    </div>
+  )
 }
 
 export const query = graphql`

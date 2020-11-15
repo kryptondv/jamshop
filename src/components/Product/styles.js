@@ -10,38 +10,37 @@ export const StyledImg = styled.img`
 `
 export const StyledTag = styled.span`
   display: block;
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  text-transform: uppercase;
-  color: #fbe067;
   margin-bottom: 11px;
+  color: #fbe067;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.875rem;
+  text-transform: uppercase;
 `
 
 export const StyledHeading = styled.h2`
-  font-size: 32px;
-  line-height: 37px;
-  color: #eeeeee;
   margin-bottom: 19px;
+  color: #eeeeee;
+  font-size: 2rem;
+  line-height: 37px;
 `
 
 export const StyledDescription = styled.p`
   max-width: 410px;
-  font-size: 18px;
-  line-height: 21px;
-  color: #c4c4c4;
   margin-bottom: 25px;
+  color: #c4c4c4;
+  font-size: 1.125rem;
+  line-height: 21px;
 `
 export const StyledPrice = styled.span`
   display: block;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 1.375rem;
   line-height: 26px;
   color: #eeeeee;
   margin-bottom: 17px;
   position: relative;
   left: -5px;
 `
-
 
 export const ProductContainer = styled.div`
   width: 90%;

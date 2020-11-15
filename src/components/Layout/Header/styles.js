@@ -10,13 +10,13 @@ export const StyledHeader = styled.header`
 `
 
 export const StyledInner = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 90%;
   max-width: 1400px;
   height: 100%;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding-right: 40px;
 
   @media (max-width: 780px) {
@@ -25,13 +25,13 @@ export const StyledInner = styled.div`
 `
 
 export const StyledLink = styled((props) => <Link {...props} />)`
-  text-decoration: none;
   color: #e4e3e3;
-  font-weight: 700;
   font-size: 22px;
+  font-weight: 700;
+  text-decoration: none;
   transition: 0.2s ease-out;
 
   &:hover {
-    color: #B1B0B0;
+    color: #b1b0b0;
   }
 `

@@ -1,11 +1,10 @@
 import React, { useRef } from "react"
 import Slider from "react-slick"
-import "slick-carousel/slick/slick.css"
-import "slick-carousel/slick/slick-theme.css"
 
 import ProductCard from "../ProductCard"
 
-
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
 
 import {
   SliderContainer,
@@ -18,8 +17,9 @@ import {
 } from "./styles"
 
 export default function ProductCarousel({ products }) {
-  const SliderEl = useRef()
+  const SliderEl = useRef(null)
 
+  // slide handlers use react-slick methods available on Slider component
   const slidePrev = () => {
     SliderEl.current.slickPrev()
   }
@@ -28,6 +28,7 @@ export default function ProductCarousel({ products }) {
     SliderEl.current.slickNext()
   }
 
+  // react-slick settings object
   const settings = {
     dots: false,
     infinite: true,
@@ -37,7 +38,6 @@ export default function ProductCarousel({ products }) {
     slidesToShow: 4,
     slidesToScroll: 1,
     initialSlide: 0,
-
     responsive: [
       {
         breakpoint: 1820,

@@ -3,12 +3,12 @@ import styled from "styled-components"
 import Chevron from "../../../assets/icons/chevron.svg"
 
 export const StyledContainer = styled.div`
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: relative;
   z-index: 20;
-  cursor: ${(props) => (props.active ? "pointer" : "default")}; ;
+  cursor: ${(props) => (props.active ? "pointer" : "default")};
 `
 
 export const StyledIconContainer = styled.div`
@@ -24,17 +24,16 @@ export const StyledChevron = styled((props) => <Chevron {...props} />)`
 
 export const StyledCounter = styled.span`
   position: absolute;
-  font-family: "Roboto", sans-serif;
-  width: 12px;
-  height: 13px;
-  line-height: 1;
-  font-size: 8px;
-  background: ${(props) => (props.active ? "#AB528D" : "#301346")};
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
   right: -4px;
   top: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12px;
+  height: 13px;
+  border-radius: 50%;
+  background: ${(props) => (props.active ? "#AB528D" : "#301346")};
+  font-family: "Roboto", sans-serif;
+  font-size: 8px;
+  line-height: 1;
 `
-

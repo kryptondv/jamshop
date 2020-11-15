@@ -1,9 +1,9 @@
-import styled from 'styled-components';
+import styled from "styled-components"
 
 export const StyledItem = styled.div`
-  width: 100%;
   display: flex;
   align-items: center;
+  width: 100%;
   margin-bottom: 10px;
 `
 
@@ -11,17 +11,18 @@ export const StyledImg = styled.img`
   width: 24px;
   margin-right: 15px;
 `
+
 export const StyledName = styled.span`
   flex-grow: 1;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 15px;
   color: #eeeeee;
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 15px;
   text-transform: uppercase;
 `
 
 export const StyledPrice = styled.span`
   font-weight: 700;
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 14px;
 `

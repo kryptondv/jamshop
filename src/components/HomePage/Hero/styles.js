@@ -24,21 +24,21 @@ export const StyledHero = styled.section`
   }
 
   @media (max-width: 780px) {
-    min-height: 600px;
     height: 70vh;
+    min-height: 600px;
     margin-bottom: 20px;
   }
 `
 
 export const StyledHeading = styled.h1`
+  position: relative;
+  height: 127px;
+  margin-bottom: 33px;
+  padding-left: 34px;
+  color: #e4e3e3;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 3rem;
   line-height: 55px;
-  color: #e4e3e3;
-  padding-left: 34px;
-  height: 127px;
-  margin-bottom: 33px;
-  position: relative;
 
   @media (min-width: 1400px) {
     font-size: 3.5rem;
@@ -57,8 +57,6 @@ export const StyledHeading = styled.h1`
   @media (max-width: 300px) {
     font-size: 1.5rem;
   }
-
-
 
   &::after {
     content: url("${HeroDecor}");
@@ -85,13 +83,13 @@ export const StyledImage = styled.img`
   width: clamp(200px, 40vw, 393px);
 `
 export const Container = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 90%;
   max-width: 1400px;
   height: 100%;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 
   @media (max-width:780px) {
     flex-direction: column;
@@ -100,23 +98,23 @@ export const Container = styled.div`
 `
 
 export const Left = styled.div`
-  height: 100%;
-  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 50%;
+  height: 100%;
   @media (max-width: 780px) {
     width: 100%;
   }
 `
 
 export const Right = styled.div`
-  height: 100%;
-  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  width: 50%;
+  height: 100%;
   padding-left: 32px;
 
   @media (max-width: 940px) {
