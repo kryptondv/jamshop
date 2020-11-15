@@ -1,4 +1,4 @@
-import React, { useContext } from "react"
+import React, { useContext, useEffect, useState } from "react"
 
 import { CartContext } from "../../../contexts/cartContext"
 
@@ -12,6 +12,7 @@ import {
 } from "./styles"
 
 export default function CartNavBtn() {
+  const [animate, setAnimate] = useState(false)
   const { cart, cartOpen, setCartOpen } = useContext(CartContext)
 
   const handleIconClick = () => {
@@ -20,11 +21,24 @@ export default function CartNavBtn() {
     }
   }
 
+  // add animation on new cart item
+  useEffect(() => {
+    if (cart.length > 0) {
+      setAnimate(true)
+    }
+    const animationTimeout = setTimeout(() => {
+      setAnimate(false)
+    }, 200)
+
+    return () => {
+      clearTimeout(animationTimeout)
+    }
+  }, [cart])
   return (
     <StyledCartNavBtn onClick={handleIconClick} active={cart.length > 0}>
       <StyledIconContainer>
         <CartIcon />
-        <StyledCounter active={cart.length > 0}>{cart.length}</StyledCounter>
+        <StyledCounter active={cart.length > 0} animate={animate}>{cart.length}</StyledCounter>
       </StyledIconContainer>
       <StyledChevron flipped={cartOpen ? 1 : 0} />
     </StyledCartNavBtn >

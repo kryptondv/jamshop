@@ -40,4 +40,6 @@ export const StyledCounter = styled.span`
   font-family: "Roboto", sans-serif;
   font-size: 8px;
   line-height: 1;
+  transition: 0.1s ease-out;
+  transform: ${(props) => (props.animate ? "scale(1.2)" : "initial")};
 `
