@@ -68,7 +68,7 @@ export default function ProductCarousel({ products }) {
         </SliderButton>
       </BtnContainerLeft>
       <Slider {...settings} ref={SliderEl}>
-        {products.map(({ childMarkdownRemark: { frontmatter }, id }) => (
+        {products.map(({ childMarkdownRemark: { frontmatter, id } }) => (
           <SliderItem key={id}>
             <ProductCard product={frontmatter} />
           </SliderItem>

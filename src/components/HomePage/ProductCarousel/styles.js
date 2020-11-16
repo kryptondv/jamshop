@@ -67,6 +67,7 @@ export const BtnContainerRight = styled.div`
 
 export const SliderItem = styled.div`
   width: 100%;
+  /* !important flag for overriding react-slick styles  */
   display: flex !important;
   justify-content: center;
 `
