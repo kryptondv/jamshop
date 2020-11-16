@@ -6,7 +6,7 @@ import Hero from "../components/HomePage/Hero"
 import ProductList from "../components/HomePage/ProductList"
 
 export default function IndexPage({ data }) {
-  const productListHeading = data.markdownRemark.frontmatter
+  const productListHeading = data.file.childMarkdownRemark.frontmatter
 
   return (
     <>
@@ -19,12 +19,12 @@ export default function IndexPage({ data }) {
 
 export const query = graphql`
   {
-    markdownRemark(
-      frontmatter: { title: { eq: "Explore community choices" } }
-    ) {
-      frontmatter {
-        title
-        lead
+    file(name: { eq: "index" }) {
+      childMarkdownRemark {
+        frontmatter {
+          title
+          lead
+        }
       }
     }
   }

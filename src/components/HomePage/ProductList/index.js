@@ -13,28 +13,30 @@ import ProductCarousel from "../ProductCarousel"
 export default function ProductList({ heading }) {
   const data = useStaticQuery(graphql`
     {
-      allMarkdownRemark {
+      allFile(filter: { name: { ne: "index" }, extension: { eq: "md" } }) {
         nodes {
-          frontmatter {
-            image {
-              publicURL
+          childMarkdownRemark {
+            frontmatter {
+              lead
+              title
+              image {
+                publicURL
+              }
+              slug
+              price
+              name
+              excerpt
             }
-            slug
-            price
-            name
-            excerpt
+            id
           }
-          id
         }
       }
     }
   `)
 
-  const products = data.allMarkdownRemark.nodes.filter(
-    ({ frontmatter }) => frontmatter.slug
-  )
-
+  const products = data.allFile.nodes
   const { title, lead } = heading
+
   return (
     <StyledProductList>
       <Container>
