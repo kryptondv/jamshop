@@ -12,7 +12,7 @@ export const StyledCartNavBtn = styled.button`
   color: white;
   z-index: 20;
   outline: none;
-  cursor: ${(props) => (props.active ? "pointer" : "default")};
+  cursor: ${({ active }) => (active ? "pointer" : "default")};
 `
 
 export const StyledIconContainer = styled.div`
@@ -23,7 +23,7 @@ export const StyledChevron = styled((props) => <Chevron {...props} />)`
   position: absolute;
   right: -18px;
   transition: 0.2s ease-out;
-  transform: ${(props) => (props.flipped ? "rotateX(180deg)" : "initial")};
+  transform: ${({ flipped }) => (flipped ? "rotateX(180deg)" : "initial")};
 `
 
 export const StyledCounter = styled.span`
@@ -36,10 +36,10 @@ export const StyledCounter = styled.span`
   width: 12px;
   height: 13px;
   border-radius: 50%;
-  background: ${(props) => (props.active ? "#AB528D" : "#301346")};
-  font-family: "Roboto", sans-serif;
+  background: ${({ active, theme }) => (active ? theme.color.counterActive : theme.color.counter)};
+  font-family: ${({ theme }) => theme.font.secondary};
   font-size: 8px;
   line-height: 1;
   transition: 0.1s ease-out;
-  transform: ${(props) => (props.animate ? "scale(1.2)" : "initial")};
+  transform: ${({ animate }) => (animate ? "scale(1.2)" : "initial")};
 `

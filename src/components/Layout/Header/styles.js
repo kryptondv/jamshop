@@ -25,14 +25,14 @@ export const StyledInner = styled.div`
 `
 
 export const StyledLink = styled((props) => <Link {...props} />)`
-  color: #e4e3e3;
+  color: ${({ theme }) => theme.color.neutral};
   font-size: 22px;
   font-weight: 700;
   text-decoration: none;
-  transition: 0.2s ease-out;
+  transition: ${({ theme }) => theme.transition};
   text-transform: uppercase;
 
   &:hover {
-    color: #b1b0b0;
+    color: ${({ theme }) => theme.color.neutralDark};
   }
 `

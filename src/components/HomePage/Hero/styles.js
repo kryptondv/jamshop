@@ -35,8 +35,8 @@ export const StyledHeading = styled.h1`
   height: 127px;
   margin-bottom: 33px;
   padding-left: 34px;
-  color: #e4e3e3;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  color: ${({ theme }) => theme.color.neutral};
+  font-family: ${({ theme }) => theme.font.heading};
   font-size: 3rem;
   line-height: 55px;
 
@@ -91,7 +91,7 @@ export const Container = styled.div`
   height: 100%;
   margin: 0 auto;
 
-  @media (max-width:780px) {
+  @media (max-width: 780px) {
     flex-direction: column;
     padding-top: 150px;
   }

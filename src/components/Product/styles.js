@@ -11,15 +11,15 @@ export const StyledImg = styled.img`
 export const StyledTag = styled.span`
   display: block;
   margin-bottom: 11px;
-  color: #fbe067;
-  font-family: "Roboto", sans-serif;
+  color: ${({ theme }) => theme.color.secondary};
+  font-family: ${({ theme }) => theme.font.secondary};
   font-size: 0.875rem;
   text-transform: uppercase;
 `
 
 export const StyledHeading = styled.h2`
   margin-bottom: 19px;
-  color: #eeeeee;
+  color: ${({ theme }) => theme.color.neutralLight};
   font-size: 2rem;
   line-height: 37px;
 `
@@ -27,7 +27,7 @@ export const StyledHeading = styled.h2`
 export const StyledDescription = styled.p`
   max-width: 410px;
   margin-bottom: 25px;
-  color: #c4c4c4;
+  color: ${({ theme }) => theme.color.neutralDark};
   font-size: 1.125rem;
   line-height: 21px;
 `
@@ -36,7 +36,7 @@ export const StyledPrice = styled.span`
   font-weight: 700;
   font-size: 1.375rem;
   line-height: 26px;
-  color: #eeeeee;
+  color: ${({ theme }) => theme.color.neutralLight};
   margin-bottom: 17px;
   position: relative;
   left: -5px;
@@ -51,7 +51,7 @@ export const ProductContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Roboto", sans-serif;
+  font-family: ${({ theme }) => theme.font.secondary};
 
   @media (max-width: 768px) {
     padding: 100px 0 50px;

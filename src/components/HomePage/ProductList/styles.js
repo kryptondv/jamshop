@@ -7,14 +7,14 @@ export const StyledProductList = styled.div`
 
 export const StyledHeading = styled.h2`
   margin-bottom: 20px;
-  color: #eeeeee;
+  color: ${({ theme }) => theme.color.neutralLight};
   font-size: 1.75rem;
   line-height: 34px;
 `
 export const StyledLead = styled.p`
   max-width: 373px;
   margin-bottom: 62px;
-  color: #c4c4c4;
+  color: ${({ theme }) => theme.color.neutralDark};
   font-size: 1rem;
   line-height: 20px;
 `

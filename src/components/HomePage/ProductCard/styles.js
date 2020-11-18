@@ -10,16 +10,16 @@ export const StyledLink = styled((props) => <Link {...props} />)`
   width: 265px;
   height: 273px;
   padding: 32px 22px 22px 22px;
-  border: 3px solid #969393;
+  border: 3px solid ${({ theme }) => theme.color.productCardBorder};
   border-radius: 2px;
-  background: #331f41;
+  background: ${({ theme }) => theme.color.backgroundLight};
   text-decoration: none;
   transition: 0.1s ease-out;
 
   &:hover {
-    background: #261234;
+    background: ${({ theme }) => theme.color.backgroundHover};
     transform: scale(0.99);
-    box-shadow: 0 0 10px rgba(150, 147, 147, 0.3);
+    box-shadow: 0 0 10px ${({ theme }) => theme.color.productCardShadow};
   }
 
   @media (max-width: 450px) {
@@ -43,7 +43,7 @@ export const StyledImg = styled.img`
 
 export const StyledHeading = styled.h3`
   margin-bottom: 3px;
-  color: #eeeeee;
+  color: ${({ theme }) => theme.color.neutralLight};
   font-size: 1.125rem;
   line-height: 22px;
   text-transform: uppercase;
@@ -52,7 +52,7 @@ export const StyledHeading = styled.h3`
 export const StyledDescription = styled.p`
   max-width: 192px;
   margin: 0;
-  color: #c4c4c4;
+  color: ${({ theme }) => theme.color.neutralDark};
   font-size: 0.875rem;
 
   @media (max-width: 380px) {

@@ -10,9 +10,8 @@ export const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    background: #1C042E;
-    font-family: "Montserrat", sans-serif;
-    color: #fff;
+    background: ${({ theme }) => theme.color.background};
+    font-family: ${({ theme }) => theme.font.primary};
     position: ${(props) => (props.cartOpen ? "fixed" : "static")};
     width: 100%;
     overflow-y: scroll;

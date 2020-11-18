@@ -19,7 +19,7 @@ export const StyledCartOverlay = styled.div`
   z-index: 10;
   background: rgba(28, 4, 46, 0.55);
   backdrop-filter: blur(10px);
-  animation: ${fadeIn} .1s ease-out;
+  animation: ${fadeIn} 0.1s ease-out;
 `
 
 export const StyledCart = styled.div`
@@ -27,9 +27,9 @@ export const StyledCart = styled.div`
   top: 59px;
   width: 281px;
   height: 276px;
-  background: #220538;
+  background: ${({ theme }) => theme.color.cartBackground};
   right: 0;
-  border: 2px solid #f5f5f5;
+  border: 2px solid ${({ theme }) => theme.color.cartBorder};
   border-radius: 4px;
   padding: 37px 30px 23px 19px;
   display: flex;
@@ -57,11 +57,12 @@ export const ItemsContainer = styled.div`
     width: 6px;
   }
   ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px rgba(245, 245, 245, 0.3);
-    -webkit-box-shadow: inset 0 0 6px rgba(245, 245, 245, 0.3);
+    box-shadow: inset 0 0 6px ${({ theme }) => theme.color.primaryShadow};
+    -webkit-box-shadow: inset 0 0 6px
+      ${({ theme }) => theme.color.primaryShadow};
   }
   ::-webkit-scrollbar-thumb {
-    box-shadow: inset 0 0 6px #ab528d;
-    -webkit-box-shadow: inset 0 0 6px #ab528d;
+    box-shadow: inset 0 0 6px ${({ theme }) => theme.color.primary};
+    -webkit-box-shadow: inset 0 0 6px ${({ theme }) => theme.color.primary};
   }
 `
