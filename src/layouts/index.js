@@ -13,7 +13,7 @@ export default function Layout({ children }) {
     <>
       <GlobalStyle cartOpen={cartOpen} />
       <Header />
-      {cartOpen ? <Cart /> : null}
+      {cartOpen && <Cart />}
       <main>{children}</main>
       <footer />
     </>
