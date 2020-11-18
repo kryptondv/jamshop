@@ -39,14 +39,10 @@ export default function Product({ product }) {
         <StyledPrice>${price}</StyledPrice>
         <Button
           handleClick={() => addProduct(product)}
-          w="146"
-          h="40"
-          radius="4px"
-          fontFamily="Roboto, sans-serif"
-          fontSize="13px"
-          fontWeight="700"
-          lineHeight="15px"
-          color="#fff"
+          big
+          bold
+          borderRadius
+          secondaryFamily
         >
           Add to cart
         </Button>

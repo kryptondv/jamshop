@@ -14,16 +14,19 @@ export default function Button({ children, handleClick, ...restProps }) {
   )
 }
 
-Button.propTypes = {
-  w: PropTypes.string.isRequired,
-  h: PropTypes.string.isRequired,
-  fontFamily: PropTypes.string.isRequired,
+const requiredPropsCheck = (props) => {
+  if (!props.big && !props.small && !props.round) {
+    return new Error(
+      "One of 'big', 'small' or 'round' is required by Button component.")
+  }
 }
 
-Button.defaultProps = {
-  radius: "0",
-  lineHeight: "1",
-  color: "#fff",
-  fontSize: "1rem",
-  fontWeight: "400",
+Button.propTypes = {
+  big: requiredPropsCheck,
+  small: requiredPropsCheck,
+  round: requiredPropsCheck,
+  secondaryColor: PropTypes.bool,
+  secondaryFamily: PropTypes.bool,
+  bold: PropTypes.bool,
+  borderRadius: PropTypes.bool,
 }

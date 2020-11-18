@@ -25,16 +25,7 @@ function HomepageHero() {
             <span>Don't waste time</span>
             <span>on boring things</span>
           </StyledHeading>
-          <Button
-            w="146"
-            h="40"
-            radius="4px"
-            fontFamily="Montserrat, sans-serif"
-            fontSize="13px"
-            fontWeight="700"
-            color="#fff"
-            lineHeight="16px"
-          >
+          <Button big borderRadius bold>
             Go explore
           </Button>
         </Right>

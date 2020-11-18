@@ -34,17 +34,7 @@ export default function ProductCard({ product }) {
       <StyledHeading>{name}</StyledHeading>
       <StyledDescription>{excerpt}</StyledDescription>
       <ButtonContainer>
-        <Button
-          handleClick={(e) => addToCart(e)}
-          w="44"
-          h="44"
-          radius="50%"
-          fontFamily="Roboto, sans-serif"
-          fontSize="32px"
-          fontWeight="700"
-          lineHeight="37px"
-          color="#fff"
-        >
+        <Button handleClick={(e) => addToCart(e)} round bold secondaryFamily>
           +
         </Button>
       </ButtonContainer>

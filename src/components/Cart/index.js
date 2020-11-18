@@ -34,14 +34,7 @@ export default function Cart() {
       <Container>
         <StyledCart ref={cartEl}>
           <ItemsContainer>{renderItems()}</ItemsContainer>
-          <Button
-            w="89"
-            h="27"
-            fontSize="12px"
-            lineHeight="14px"
-            color="#eeeeee"
-            fontFamily="Roboto, sans-serif"
-          >
+          <Button small secondaryFamily secondaryColor>
             Submit
           </Button>
         </StyledCart>
