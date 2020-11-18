@@ -1,6 +1,6 @@
 import React, { useContext, useRef } from "react"
 
-import { CartContext } from "src/contexts/cartContext"
+import { CartContext } from "~/contexts/cartContext"
 
 import CartItem from "./CartItem"
 import Button from "components/Common/Button"

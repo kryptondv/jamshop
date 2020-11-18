@@ -1,7 +1,7 @@
 import React, { useContext } from "react"
 import PropTypes from "prop-types"
 
-import { CartContext } from "src/contexts/cartContext"
+import { CartContext } from "~/contexts/cartContext"
 
 import Button from "components/Common/Button"
 

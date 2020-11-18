@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components"
-import HeroDecor from "src/assets/elements/hero_decor.svg"
+import HeroDecor from "~/assets/elements/hero_decor.svg"
 
 const fadeUp = keyframes`
   0% {

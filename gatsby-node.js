@@ -1,7 +1,7 @@
 const path = require("path")
-exports.createPages = async ({ actions, graphql }) => {
+exports.createPages = async({ actions, graphql }) => {
   const { createPage } = actions
-  const productTemplate = path.resolve("./src/templates/productPage/index.js")
+  const productTemplate = path.resolve("src/templates/productPage/index.js")
   const { data } = await graphql(`
     query {
       allFile(filter: { name: { ne: "index" }, extension: { eq: "md" } }) {

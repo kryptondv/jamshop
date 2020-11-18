@@ -1,7 +1,7 @@
 import React from "react"
 
-import HeroBackground from "src/assets/elements/hero_background.svg"
-import HeroImage from "src/assets/elements/monitor.svg"
+import HeroBackground from "~/assets/elements/hero_background.svg"
+import HeroImage from "~/assets/elements/monitor.svg"
 import Button from "components/Common/Button"
 
 import {

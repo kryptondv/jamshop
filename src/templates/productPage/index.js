@@ -1,8 +1,8 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import Product from "../../components/Product"
-import SEO from "../../components/SEO"
+import Product from "components/Product"
+import SEO from "components/SEO"
 
 export default function ProductPage({ data }) {
   const product = data.markdownRemark.frontmatter

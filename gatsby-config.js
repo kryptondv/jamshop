@@ -49,7 +49,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-root-import",
       options: {
-        src: path.join(__dirname, "src"),
+        "~": path.join(__dirname, "src"),
         components: path.join(__dirname, "src/components"),
       },
     },
