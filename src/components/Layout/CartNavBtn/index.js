@@ -5,7 +5,7 @@ import { CartContext } from "src/contexts/cartContext"
 import CartIcon from "src/assets/icons/cart.svg"
 
 import {
-  StyledCartNavBtn ,
+  StyledCartNavBtn,
   StyledIconContainer,
   StyledCounter,
   StyledChevron,

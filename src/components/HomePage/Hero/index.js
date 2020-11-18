@@ -22,7 +22,7 @@ function HomepageHero() {
         </Left>
         <Right>
           <StyledHeading>
-            <span>Don't waste time</span>
+            <span>Don&apos;t waste time</span>
             <span>on boring things</span>
           </StyledHeading>
           <Button big borderRadius bold>
