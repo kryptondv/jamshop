@@ -1,7 +1,7 @@
 import React from "react"
 import styled, { css } from "styled-components"
-import ArrowLeftIcon from "../../../assets/icons/arrow-left.svg"
-import ArrowRightIcon from "../../../assets/icons/arrow-right.svg"
+import ArrowLeftIcon from "src/assets/icons/arrow-left.svg"
+import ArrowRightIcon from "src/assets/icons/arrow-right.svg"
 
 const Arrow = css`
   &:active {

@@ -8,7 +8,7 @@ import {
   StyledLead,
   Container,
 } from "./styles"
-import ProductCarousel from "../ProductCarousel"
+import ProductCarousel from "components/HomePage/ProductCarousel"
 
 export default function ProductList({ heading }) {
   const data = useStaticQuery(graphql`

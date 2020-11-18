@@ -1,3 +1,5 @@
+const path = require("path")
+
 module.exports = {
   siteMetadata: {
     title: "BEJAMAS | GATSBY SHOP",
@@ -10,14 +12,14 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
-        path: `${__dirname}/src/assets`,
+        path: path.join(__dirname, "src/assets"),
       },
     },
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "products",
-        path: `${__dirname}/src/data/products`,
+        path: path.join(__dirname, "src/data/products"),
       },
     },
     "gatsby-transformer-remark",
@@ -45,18 +47,10 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-prefetch-google-fonts",
+      resolve: "gatsby-plugin-root-import",
       options: {
-        fonts: [
-          {
-            family: "Montserrat",
-            variants: ["400", "700"],
-          },
-          {
-            family: "Roboto",
-            variants: ["400", "700"],
-          },
-        ],
+        src: path.join(__dirname, "src"),
+        components: path.join(__dirname, "src/components"),
       },
     },
   ],

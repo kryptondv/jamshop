@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import Chevron from "../../../assets/icons/chevron.svg"
+import Chevron from "src/assets/icons/chevron.svg"
 
 export const StyledCartNavBtn = styled.button`
   position: relative;

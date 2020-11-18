@@ -1,9 +1,9 @@
 import React, { useContext, useRef } from "react"
 
-import { CartContext } from "../../contexts/cartContext"
+import { CartContext } from "src/contexts/cartContext"
 
 import CartItem from "./CartItem"
-import Button from "../Common/Button"
+import Button from "components/Common/Button"
 
 import {
   StyledCartOverlay,

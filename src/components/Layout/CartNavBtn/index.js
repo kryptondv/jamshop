@@ -1,8 +1,8 @@
 import React, { useContext, useEffect, useState } from "react"
 
-import { CartContext } from "../../../contexts/cartContext"
+import { CartContext } from "src/contexts/cartContext"
 
-import CartIcon from "../../../assets/icons/cart.svg"
+import CartIcon from "src/assets/icons/cart.svg"
 
 import {
   StyledCartNavBtn ,
