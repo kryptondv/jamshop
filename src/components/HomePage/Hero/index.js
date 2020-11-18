@@ -35,7 +35,7 @@ function HomepageHero() {
             color="#fff"
             lineHeight="16px"
           >
-            GO EXPLORE
+            Go explore
           </Button>
         </Right>
       </Container>

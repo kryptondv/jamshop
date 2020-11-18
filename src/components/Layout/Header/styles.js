@@ -30,6 +30,7 @@ export const StyledLink = styled((props) => <Link {...props} />)`
   font-weight: 700;
   text-decoration: none;
   transition: 0.2s ease-out;
+  text-transform: uppercase;
 
   &:hover {
     color: #b1b0b0;

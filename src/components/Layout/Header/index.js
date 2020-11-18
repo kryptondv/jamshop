@@ -8,7 +8,7 @@ export default function Header() {
   return (
     <StyledHeader>
       <StyledInner>
-        <StyledLink to="/">JAM SHOP</StyledLink>
+        <StyledLink to="/">Jam Shop</StyledLink>
         <CartNavBtn />
       </StyledInner>
     </StyledHeader>
