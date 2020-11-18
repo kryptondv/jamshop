@@ -53,5 +53,22 @@ module.exports = {
         components: path.join(__dirname, "src/components"),
       },
     },
+    {
+      resolve: "gatsby-plugin-webfonts",
+      options: {
+        fonts: {
+          google: [
+            {
+              family: "Montserrat",
+              variants: ["400", "700"],
+            },
+            {
+              family: "Roboto",
+              variants: ["400", "700"],
+            },
+          ],
+        },
+      },
+    },
   ],
 }
