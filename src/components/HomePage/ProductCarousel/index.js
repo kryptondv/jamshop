@@ -39,6 +39,7 @@ export default function ProductCarousel({ products }) {
     slidesToShow: 4,
     slidesToScroll: 1,
     initialSlide: 0,
+    touchMove: false,
     responsive: [
       {
         breakpoint: 1820,
