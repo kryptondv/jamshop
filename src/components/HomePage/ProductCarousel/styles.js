@@ -12,7 +12,7 @@ const arrow = css`
   }
 
   ${media.small} {
-    width: 62px;
+    width: auto;
   }
 `
 

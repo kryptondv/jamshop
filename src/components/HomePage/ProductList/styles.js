@@ -14,7 +14,7 @@ export const StyledHeading = styled.h2`
   line-height: 35px;
 `
 export const StyledLead = styled.p`
-  max-width: 373px;
+  max-width: 370px;
   margin: 0 auto 60px;
   color: ${({ theme }) => theme.color.neutralDark};
   font-size: 1rem;

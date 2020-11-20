@@ -60,7 +60,7 @@ export const StyledHeading = styled.div`
   }
 
   &::after {
-    @media (min-width: 980px) {
+    ${media.tablet} {
       content: url("${HeroDecor}");
       position: absolute;
       top: -15px;
