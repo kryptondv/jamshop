@@ -65,24 +65,24 @@ export const ProductContainer = styled.div`
 `
 
 export const Left = styled.div`
-  width: 50%;
-  padding-right: 64px;
+  width: 100%;
+  padding: 0;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  margin-bottom: 50px;
 
-  @media (max-width: 768px) {
-    padding: 0;
-    width: 100%;
-    justify-content: center;
-    margin-bottom: 50px;
+  @media (min-width: 768px) {
+    width: 50%;
+    margin: 0;
+    padding-right: 64px;
+    justify-content: flex-end;
   }
 `
 export const Right = styled.div`
-  width: 50%;
-  padding-left: 64px;
+  width: 100%;
 
-  @media (max-width: 768px) {
-    padding: 0;
-    width: 100%;
+  @media (min-width: 768px) {
+    width: 50%;
+    padding-left: 64px;
   }
 `
