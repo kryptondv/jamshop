@@ -2,7 +2,7 @@ import styled from "styled-components"
 import { media } from "~/layouts/mediaQueries.js"
 
 export const StyledImg = styled.img`
-  width: 40vw;
+  width: 40%;
   min-width: 200px;
 
   ${media.tablet} {
@@ -59,8 +59,6 @@ export const ProductContainer = styled.div`
   font-family: ${({ theme }) => theme.font.secondary};
 
   ${media.tablet} {
-    height: 100vh;
-    min-height: 600px;
     flex-direction: row;
   }
 `

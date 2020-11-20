@@ -14,21 +14,19 @@ const fadeUp = keyframes`
 `
 
 export const StyledHero = styled.section`
-  height: 70vh;
-  min-height: 600px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   background-image: url(${(props) => props.background});
   background-repeat: no-repeat;
   background-position: right top;
   background-size: 40%;
 
   ${media.tablet} {
-    min-height: 670px;
     margin: 0;
-    height: 650px;
+    padding-top: 200px;
   }
 
   ${media.desktop} {
+    margin-bottom: 70px;
     background-size: auto;
   }
 `
@@ -43,6 +41,10 @@ export const StyledHeading = styled.div`
   font-weight: 700;
   line-height: 1.5;
 
+  ${media.small} {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
   ${media.tablet} {
     font-size: 2rem;
     line-height: 1.5;
@@ -79,7 +81,11 @@ export const StyledHeading = styled.div`
 `
 
 export const StyledImage = styled.img`
-  width: clamp(200px, 40vw, 395px);
+  width: 60%;
+
+  ${media.tablet} {
+    /* width: clamp(200px, 100%, 395px); */
+  }
 `
 
 export const Container = styled.div`
