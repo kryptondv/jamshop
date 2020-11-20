@@ -13,60 +13,57 @@ const fadeUp = keyframes`
 `
 
 export const StyledHero = styled.section`
-  height: 695px;
+  height: 70vh;
+  min-height: 600px;
+  margin-bottom: 20px;
   background-image: url(${(props) => props.background});
   background-repeat: no-repeat;
   background-position: right top;
+  background-size: 40%;
 
-  @media (max-width: 900px) {
-    height: 600px;
-    background-size: 40%;
-  }
-
-  @media (max-width: 780px) {
+  @media (min-width: 780px) {
     height: 70vh;
     min-height: 600px;
-    margin-bottom: 20px;
+    margin: 0;
+  }
+
+  @media (min-width: 900px) {
+    height: 680px;
+    background-size: auto;
   }
 `
 
-export const StyledHeading = styled.h1`
+export const StyledHeading = styled.div`
   position: relative;
-  height: 127px;
+  min-height: 127px;
   margin-bottom: 30px;
-  padding-left: 35px;
   color: ${({ theme }) => theme.color.neutral};
   font-family: ${({ theme }) => theme.font.heading};
-  font-size: 3rem;
+  font-size: 1.5rem;
   font-weight: 700;
-  line-height: 55px;
+  line-height: 1.5;
+
+  @media (min-width: 456px) {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+
+  @media (min-width: 1200px) {
+    padding-left: 0;
+    font-size: 2.5rem;
+  }
 
   @media (min-width: 1400px) {
     font-size: 3.5rem;
   }
 
-  @media (max-width: 1200px) {
-    padding-left: 0;
-    font-size: 2.5rem;
-  }
-
-  @media (max-width: 456px) {
-    font-size: 2rem;
-    line-height: 1.5;
-  }
-
-  @media (max-width: 300px) {
-    font-size: 1.5rem;
-  }
-
   &::after {
-    content: url("${HeroDecor}");
-    position: absolute;
-    top: -15px;
-    right: -95px;
-    z-index: -1;
-    @media (max-width: 980px) {
-      display: none;
+    @media (min-width: 980px) {
+      content: url("${HeroDecor}");
+      position: absolute;
+      top: -15px;
+      right: -95px;
+      z-index: -1;
     }
   }
 
@@ -80,21 +77,25 @@ export const StyledHeading = styled.h1`
     }
   }
 `
+
 export const StyledImage = styled.img`
   width: clamp(200px, 40vw, 395px);
 `
+
 export const Container = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   width: 90%;
   max-width: 1400px;
   height: 100%;
   margin: 0 auto;
+  padding-top: 150px;
 
-  @media (max-width: 780px) {
-    flex-direction: column;
-    padding-top: 150px;
+  @media (min-width: 780px) {
+    flex-direction: row;
+    padding: 0;
   }
 `
 
@@ -102,10 +103,11 @@ export const Left = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 100%;
   height: 100%;
-  @media (max-width: 780px) {
-    width: 100%;
+
+  @media (min-width: 780px) {
+    width: 50%;
   }
 `
 
@@ -113,18 +115,16 @@ export const Right = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  width: 50%;
+  align-items: center;
+  width: 100%;
   height: 100%;
-  padding-left: 30px;
+  padding-top: 30px;
 
-  @media (max-width: 940px) {
-    padding-left: 0;
+  @media (min-width: 780px) {
+    width: 50%;
+    align-items: flex-start;
+    padding-top: 0;
+    padding-left: 30px;
   }
 
-  @media (max-width: 780px) {
-    width: 100%;
-    align-items: center;
-    padding-top: 30px;
-  }
 `

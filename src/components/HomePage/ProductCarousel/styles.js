@@ -3,18 +3,25 @@ import styled, { css } from "styled-components"
 import ArrowLeftIcon from "~/assets/icons/arrow-left.svg"
 import ArrowRightIcon from "~/assets/icons/arrow-right.svg"
 
-const Arrow = css`
+const arrow = css`
+  width: 40px;
+
   &:active {
     filter: brightness(0.85);
   }
 
-  @media (max-width: 500px) {
+  @media (min-width: 420px) {
     width: 50px;
   }
-
-  @media (max-width: 420px) {
-    width: 40px;
+  @media (min-width: 500px) {
+    width: 62px;
   }
+`
+
+const btnContainer = css`
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 `
 
 export const SliderContainer = styled.div`
@@ -37,31 +44,27 @@ export const SliderButton = styled.button`
 `
 
 export const BtnContainerLeft = styled.div`
-  position: absolute;
-  top: 50%;
-  left: -70px;
-  transform: translateY(-50%);
+  ${btnContainer}
+  left: -45px;
 
-  @media (max-width: 500px) {
+  @media (min-width: 300px) {
     left: -50px;
   }
 
-  @media (max-width: 300px) {
-    left: -45px;
+  @media (min-width: 500px) {
+    left: -70px;
   }
 `
 export const BtnContainerRight = styled.div`
-  position: absolute;
-  top: 50%;
-  right: -70px;
-  transform: translateY(-50%);
+  ${btnContainer}
+  right: -45px;
 
-  @media (max-width: 500px) {
+  @media (min-width: 300px) {
     right: -50px;
   }
 
-  @media (max-width: 300px) {
-    right: -45px;
+  @media (min-width: 500px) {
+    right: -70px;
   }
 `
 
@@ -73,9 +76,9 @@ export const SliderItem = styled.div`
 `
 
 export const ArrowLeft = styled((props) => <ArrowLeftIcon {...props} />)`
-  ${Arrow}
+  ${arrow}
 `
 
 export const ArrowRight = styled((props) => <ArrowRightIcon {...props} />)`
-  ${Arrow}
+  ${arrow}
 `

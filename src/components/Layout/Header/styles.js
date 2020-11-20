@@ -17,10 +17,10 @@ export const StyledInner = styled.div`
   max-width: 1400px;
   height: 100%;
   margin: 0 auto;
-  padding-right: 40px;
+  padding-right: 22px;
 
-  @media (max-width: 780px) {
-    padding-right: 22px;
+  @media (min-width: 780px) {
+    padding-right: 40px;
   }
 `
 

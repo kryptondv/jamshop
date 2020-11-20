@@ -14,10 +14,15 @@ export const StyledHeading = styled.h2`
 `
 export const StyledLead = styled.p`
   max-width: 373px;
-  margin-bottom: 60px;
+  margin: 0 auto 60px;
   color: ${({ theme }) => theme.color.neutralDark};
   font-size: 1rem;
   line-height: 20px;
+
+  @media (min-width: 780px) {
+    margin: 0;
+    margin-bottom: 60px;
+  }
 `
 
 export const Container = styled.div`

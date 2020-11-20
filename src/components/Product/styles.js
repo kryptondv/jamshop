@@ -45,21 +45,22 @@ export const StyledPrice = styled.span`
 `
 
 export const ProductContainer = styled.div`
-  width: 90%;
-  max-width: 1400px;
-  margin: 0 auto;
-  height: 100vh;
-  min-height: 600px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 90%;
+  max-width: 1400px;
+  height: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 100px 0 50px;
   font-family: ${({ theme }) => theme.font.secondary};
 
-  @media (max-width: 768px) {
-    padding: 100px 0 50px;
-    height: 100%;
-    min-height: 100vh;
-    flex-direction: column;
+  @media (min-width: 768px) {
+    height: 100vh;
+    min-height: 600px;
+    flex-direction: row;
   }
 `
 

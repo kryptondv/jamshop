@@ -8,7 +8,7 @@ export const StyledLink = styled((props) => <Link {...props} />)`
   flex-direction: column;
   justify-content: space-between;
   width: 265px;
-  height: 275px;
+  height: 310px;
   padding: 32px 22px 22px 22px;
   border: 3px solid ${({ theme }) => theme.color.productCardBorder};
   border-radius: 2px;
@@ -16,28 +16,28 @@ export const StyledLink = styled((props) => <Link {...props} />)`
   text-decoration: none;
   transition: 0.1s ease-out;
 
+  @media (min-width: 380px) {
+    width: 250px;
+  }
+
+  @media (min-width: 450px) {
+    width: 265px;
+    height: 275px;
+  }
+
   &:hover {
     background: ${({ theme }) => theme.color.backgroundHover};
     transform: scale(0.99);
     box-shadow: 0 0 10px ${({ theme }) => theme.color.productCardShadow};
   }
-
-  @media (max-width: 450px) {
-    width: 250px;
-    height: 290px;
-  }
-
-  @media (max-width: 380px) {
-    width: 240px;
-  }
 `
 
 export const StyledImg = styled.img`
   align-self: center;
-  margin-bottom: 37px;
+  margin-bottom: 20px;
 
-  @media (max-width: 380px) {
-    margin-bottom: 20px;
+  @media (min-width: 380px) {
+    margin-bottom: 40px;
   }
 `
 
@@ -51,15 +51,15 @@ export const StyledHeading = styled.h3`
 `
 
 export const StyledDescription = styled.p`
-  max-width: 190px;
-  margin: 0;
+  max-width: 170px;
+  margin-bottom: 20px;
   color: ${({ theme }) => theme.color.neutralDark};
   font-size: 0.875rem;
   line-height: 17px;
 
-  @media (max-width: 380px) {
-    max-width: 170px;
-    margin-bottom: 20px;
+  @media (min-width: 380px) {
+    max-width: 190px;
+    margin: 0;
   }
 `
 
