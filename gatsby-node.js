@@ -8,17 +8,8 @@ exports.createPages = async({ actions, graphql }) => {
         nodes {
           childMarkdownRemark {
             frontmatter {
-              lead
-              title
-              image {
-                publicURL
-              }
               slug
-              price
-              name
-              excerpt
             }
-            id
           }
         }
       }
