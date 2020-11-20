@@ -1,6 +1,6 @@
 import React from "react"
 
-import CartNavBtn from "components/Layout/CartNavBtn"
+import { CartNavBtn } from "components"
 
 import { StyledHeader, StyledInner, StyledLink } from "./styles"
 

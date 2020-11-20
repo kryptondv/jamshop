@@ -3,10 +3,10 @@ import { ThemeProvider } from "styled-components"
 import { theme } from "./theme"
 import { CartContext } from "~/contexts/cartContext"
 
-import Header from "components/Layout/Header"
-import Cart from "components/Cart"
+import { Header, CartEl } from "components"
 
-import 'reset-css';
+// eslint-disable-line no-unused-vars
+import "reset-css"
 import { GlobalStyle } from "./globalStyle"
 
 export default function Layout({ children }) {
@@ -17,7 +17,7 @@ export default function Layout({ children }) {
       <>
         <GlobalStyle cartOpen={cartOpen} />
         <Header />
-        {cartOpen && <Cart />}
+        {cartOpen && <CartEl />}
         <main>{children}</main>
         <footer />
       </>

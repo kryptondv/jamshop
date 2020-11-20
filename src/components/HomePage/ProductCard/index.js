@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 
 import { CartContext } from "~/contexts/cartContext"
 
-import Button from "components/Common/Button"
+import { Button } from "components"
 
 import {
   StyledLink,

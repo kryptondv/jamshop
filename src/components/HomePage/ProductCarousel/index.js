@@ -2,7 +2,7 @@ import React, { useRef } from "react"
 import PropTypes from "prop-types"
 import Slider from "react-slick"
 
-import ProductCard from "components/HomePage/ProductCard"
+import { ProductCard } from "components"
 
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"

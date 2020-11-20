@@ -2,7 +2,7 @@ import React from "react"
 
 import HeroBackground from "~/assets/elements/hero_background.svg"
 import HeroImage from "~/assets/elements/monitor.svg"
-import Button from "components/Common/Button"
+import { Button } from "components"
 
 import {
   StyledHero,

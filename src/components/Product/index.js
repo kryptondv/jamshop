@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 
 import { CartContext } from "~/contexts/cartContext"
 
-import Button from "components/Common/Button"
+import { Button } from "components"
 
 import {
   ProductContainer,
@@ -16,7 +16,7 @@ import {
   StyledPrice,
 } from "./styles"
 
-export default function Product({ product }) {
+export function Product({ product }) {
   const { addProduct } = useContext(CartContext)
 
   const {
