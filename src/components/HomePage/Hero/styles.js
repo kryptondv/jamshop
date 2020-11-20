@@ -1,5 +1,6 @@
 import styled, { keyframes } from "styled-components"
 import HeroDecor from "~/assets/elements/hero_decor.svg"
+import { media } from "~/layouts/mediaQueries.js"
 
 const fadeUp = keyframes`
   0% {
@@ -21,14 +22,13 @@ export const StyledHero = styled.section`
   background-position: right top;
   background-size: 40%;
 
-  @media (min-width: 780px) {
-    height: 70vh;
-    min-height: 600px;
+  ${media.tablet} {
+    min-height: 670px;
     margin: 0;
+    height: 650px;
   }
 
-  @media (min-width: 900px) {
-    height: 680px;
+  ${media.desktop} {
     background-size: auto;
   }
 `
@@ -43,17 +43,17 @@ export const StyledHeading = styled.div`
   font-weight: 700;
   line-height: 1.5;
 
-  @media (min-width: 456px) {
+  ${media.tablet} {
     font-size: 2rem;
     line-height: 1.5;
   }
 
-  @media (min-width: 1200px) {
+  ${media.desktop} {
     padding-left: 0;
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 
-  @media (min-width: 1400px) {
+  ${media.large} {
     font-size: 3.5rem;
   }
 
@@ -93,7 +93,7 @@ export const Container = styled.div`
   margin: 0 auto;
   padding-top: 150px;
 
-  @media (min-width: 780px) {
+  ${media.tablet} {
     flex-direction: row;
     padding: 0;
   }
@@ -106,7 +106,7 @@ export const Left = styled.div`
   width: 100%;
   height: 100%;
 
-  @media (min-width: 780px) {
+  ${media.tablet} {
     width: 50%;
   }
 `
@@ -120,11 +120,10 @@ export const Right = styled.div`
   height: 100%;
   padding-top: 30px;
 
-  @media (min-width: 780px) {
+  ${media.tablet} {
     width: 50%;
     align-items: flex-start;
     padding-top: 0;
     padding-left: 30px;
   }
-
 `

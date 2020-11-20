@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { media } from "~/layouts/mediaQueries.js"
 
 export const StyledProductList = styled.div`
   margin-bottom: 135px;
@@ -19,7 +20,7 @@ export const StyledLead = styled.p`
   font-size: 1rem;
   line-height: 20px;
 
-  @media (min-width: 780px) {
+  ${media.tablet} {
     margin: 0;
     margin-bottom: 60px;
   }
@@ -29,7 +30,8 @@ export const Container = styled.div`
   width: 90%;
   max-width: 1180px;
   margin: 0 auto;
-  @media (max-width: 780px) {
-    text-align: center;
+  text-align: center;
+  ${media.tablet} {
+    text-align: left;
   }
 `

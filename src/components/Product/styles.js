@@ -1,11 +1,12 @@
 import styled from "styled-components"
+import { media } from "~/layouts/mediaQueries.js"
 
 export const StyledImg = styled.img`
-  width: 330px;
+  width: 40vw;
+  min-width: 200px;
 
-  @media (max-width: 768px) {
-    width: 40vw;
-    min-width: 200px;
+  ${media.tablet} {
+    width: 330px;
   }
 `
 export const StyledTag = styled.span`
@@ -57,7 +58,7 @@ export const ProductContainer = styled.div`
   padding: 100px 0 50px;
   font-family: ${({ theme }) => theme.font.secondary};
 
-  @media (min-width: 768px) {
+  ${media.tablet} {
     height: 100vh;
     min-height: 600px;
     flex-direction: row;
@@ -71,7 +72,7 @@ export const Left = styled.div`
   justify-content: center;
   margin-bottom: 50px;
 
-  @media (min-width: 768px) {
+  ${media.tablet} {
     width: 50%;
     margin: 0;
     padding-right: 64px;
@@ -81,7 +82,7 @@ export const Left = styled.div`
 export const Right = styled.div`
   width: 100%;
 
-  @media (min-width: 768px) {
+  ${media.tablet} {
     width: 50%;
     padding-left: 64px;
   }

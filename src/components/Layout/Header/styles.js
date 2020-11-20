@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
+import { media } from "~/layouts/mediaQueries.js"
 
 export const StyledHeader = styled.header`
   position: absolute;
@@ -19,7 +20,7 @@ export const StyledInner = styled.div`
   margin: 0 auto;
   padding-right: 22px;
 
-  @media (min-width: 780px) {
+  ${media.tablet} {
     padding-right: 40px;
   }
 `

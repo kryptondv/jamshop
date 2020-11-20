@@ -1,13 +1,14 @@
 import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
+import { media } from "~/layouts/mediaQueries.js"
 
 export const StyledLink = styled((props) => <Link {...props} />)`
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 265px;
+  width: 250px;
   height: 310px;
   padding: 32px 22px 22px 22px;
   border: 3px solid ${({ theme }) => theme.color.productCardBorder};
@@ -16,11 +17,7 @@ export const StyledLink = styled((props) => <Link {...props} />)`
   text-decoration: none;
   transition: 0.1s ease-out;
 
-  @media (min-width: 380px) {
-    width: 250px;
-  }
-
-  @media (min-width: 450px) {
+  ${media.small} {
     width: 265px;
     height: 275px;
   }
@@ -36,8 +33,8 @@ export const StyledImg = styled.img`
   align-self: center;
   margin-bottom: 20px;
 
-  @media (min-width: 380px) {
-    margin-bottom: 40px;
+  ${media.small} {
+    margin-bottom: 35px;
   }
 `
 
@@ -57,7 +54,7 @@ export const StyledDescription = styled.p`
   font-size: 0.875rem;
   line-height: 17px;
 
-  @media (min-width: 380px) {
+  ${media.small} {
     max-width: 190px;
     margin: 0;
   }

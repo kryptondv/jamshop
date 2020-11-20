@@ -2,6 +2,7 @@ import React from "react"
 import styled, { css } from "styled-components"
 import ArrowLeftIcon from "~/assets/icons/arrow-left.svg"
 import ArrowRightIcon from "~/assets/icons/arrow-right.svg"
+import { media } from "~/layouts/mediaQueries.js"
 
 const arrow = css`
   width: 40px;
@@ -10,10 +11,7 @@ const arrow = css`
     filter: brightness(0.85);
   }
 
-  @media (min-width: 420px) {
-    width: 50px;
-  }
-  @media (min-width: 500px) {
+  ${media.small} {
     width: 62px;
   }
 `
@@ -47,11 +45,11 @@ export const BtnContainerLeft = styled.div`
   ${btnContainer}
   left: -45px;
 
-  @media (min-width: 300px) {
+  ${media.small} {
     left: -50px;
   }
 
-  @media (min-width: 500px) {
+  ${media.tablet} {
     left: -70px;
   }
 `
@@ -59,11 +57,11 @@ export const BtnContainerRight = styled.div`
   ${btnContainer}
   right: -45px;
 
-  @media (min-width: 300px) {
+  ${media.small} {
     right: -50px;
   }
 
-  @media (min-width: 500px) {
+  ${media.small} {
     right: -70px;
   }
 `
