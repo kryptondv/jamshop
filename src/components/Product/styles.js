@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { media } from "~/layouts/mediaQueries.js"
+import { media, container } from "~/utils/cssVariables.js"
 
 export const StyledImg = styled.img`
   width: 40%;
@@ -46,15 +46,13 @@ export const StyledPrice = styled.span`
 `
 
 export const ProductContainer = styled.div`
+  ${container}
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 90%;
-  max-width: 1400px;
   height: 100%;
   min-height: 100vh;
-  margin: 0 auto;
   padding: 100px 0 50px;
   font-family: ${({ theme }) => theme.font.secondary};
 

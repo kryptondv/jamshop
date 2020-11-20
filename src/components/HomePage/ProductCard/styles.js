@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
-import { media } from "~/layouts/mediaQueries.js"
+import { media } from "~/utils/cssVariables.js"
 
 export const StyledLink = styled((props) => <Link {...props} />)`
   position: relative;

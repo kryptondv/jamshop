@@ -2,7 +2,7 @@ import React from "react"
 import styled, { css } from "styled-components"
 import ArrowLeftIcon from "~/assets/icons/arrow-left.svg"
 import ArrowRightIcon from "~/assets/icons/arrow-right.svg"
-import { media } from "~/layouts/mediaQueries.js"
+import { media, container } from "~/utils/cssVariables.js"
 
 const arrow = css`
   width: 40px;
@@ -23,10 +23,9 @@ const btnContainer = css`
 `
 
 export const SliderContainer = styled.div`
+  ${container}
   position: relative;
   width: 65%;
-  max-width: 1480px;
-  margin: 0 auto;
 `
 export const SliderButton = styled.button`
   border: none;

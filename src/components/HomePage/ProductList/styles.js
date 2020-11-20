@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { media } from "~/layouts/mediaQueries.js"
+import { media, container } from "~/utils/cssVariables.js"
 
 export const StyledProductList = styled.div`
   margin-bottom: 135px;
@@ -27,9 +27,8 @@ export const StyledLead = styled.p`
 `
 
 export const Container = styled.div`
-  width: 90%;
+  ${container}
   max-width: 1180px;
-  margin: 0 auto;
   text-align: center;
   ${media.tablet} {
     text-align: left;

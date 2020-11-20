@@ -1,6 +1,6 @@
 import styled, { keyframes } from "styled-components"
 import HeroDecor from "~/assets/elements/hero_decor.svg"
-import { media } from "~/layouts/mediaQueries.js"
+import { media, container } from "~/utils/cssVariables"
 
 const fadeUp = keyframes`
   0% {
@@ -82,21 +82,15 @@ export const StyledHeading = styled.div`
 
 export const StyledImage = styled.img`
   width: 60%;
-
-  ${media.tablet} {
-    /* width: clamp(200px, 100%, 395px); */
-  }
 `
 
 export const Container = styled.div`
+  ${container}
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
-  max-width: 1400px;
   height: 100%;
-  margin: 0 auto;
   padding-top: 150px;
 
   ${media.tablet} {

@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
-import { media } from "~/layouts/mediaQueries.js"
+import { media, container } from "~/utils/cssVariables.js"
 
 export const StyledHeader = styled.header`
   position: absolute;
@@ -11,15 +11,12 @@ export const StyledHeader = styled.header`
 `
 
 export const StyledInner = styled.div`
+  ${container}
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
-  max-width: 1400px;
   height: 100%;
-  margin: 0 auto;
   padding-right: 22px;
-
   ${media.tablet} {
     padding-right: 40px;
   }
