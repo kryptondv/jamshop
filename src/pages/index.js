@@ -19,13 +19,6 @@ export default function IndexPage({ data }) {
 
 export const query = graphql`
   {
-    file(name: { eq: "index" }) {
-      childMarkdownRemark {
-        frontmatter {
-          title
-          lead
-        }
-      }
-    }
+  ...HeadingQuery
   }
 `

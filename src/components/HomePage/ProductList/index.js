@@ -13,24 +13,7 @@ import ProductCarousel from "components/HomePage/ProductCarousel"
 export default function ProductList({ heading }) {
   const data = useStaticQuery(graphql`
     {
-      allFile(filter: { name: { ne: "index" }, extension: { eq: "md" } }) {
-        nodes {
-          childMarkdownRemark {
-            frontmatter {
-              lead
-              title
-              image {
-                publicURL
-              }
-              slug
-              price
-              name
-              excerpt
-            }
-            id
-          }
-        }
-      }
+      ...ProductQuery
     }
   `)
 

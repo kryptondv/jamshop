@@ -16,18 +16,6 @@ export default function ProductPage({ data }) {
 
 export const query = graphql`
   query($slug: String!) {
-    markdownRemark(frontmatter: { slug: { eq: $slug } }) {
-      frontmatter {
-        slug
-        name
-        description
-        price
-        tag
-        image {
-          publicURL
-        }
-      }
-      id
-    }
+    ...ProductPageQuery
   }
 `
