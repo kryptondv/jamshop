@@ -1,24 +1,25 @@
 import styled, { css } from "styled-components"
+import { fontSize } from "~/utils/cssVariables"
 
 const type = {
   big: css`
     width: 145px;
     height: 40px;
     line-height: 16px;
-    font-size: 13px;
+    font-size: ${fontSize.xs};
   `,
   small: css`
     width: 90px;
     height: 30px;
     line-height: 14px;
-    font-size: 12px;
+    font-size: ${fontSize.xs};
   `,
   round: css`
     width: 45px;
     height: 45px;
     border-radius: 50%;
     line-height: 37px;
-    font-size: 32px;
+    font-size: ${fontSize.m};
   `,
 }
 

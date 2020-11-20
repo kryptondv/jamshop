@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { media, container } from "~/utils/cssVariables.js"
+import { media, container, fontSize } from "~/utils/cssVariables.js"
 
 export const StyledProductList = styled.div`
   margin-bottom: 135px;
@@ -9,7 +9,7 @@ export const StyledProductList = styled.div`
 export const StyledHeading = styled.h2`
   margin-bottom: 20px;
   color: ${({ theme }) => theme.color.neutralLight};
-  font-size: 1.75rem;
+  font-size: ${fontSize.sm};
   font-weight: 700;
   line-height: 35px;
 `

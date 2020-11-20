@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { media, container } from "~/utils/cssVariables.js"
+import { media, container, fontSize } from "~/utils/cssVariables.js"
 
 export const StyledImg = styled.img`
   width: 40%;
@@ -14,7 +14,7 @@ export const StyledTag = styled.span`
   margin-bottom: 10px;
   color: ${({ theme }) => theme.color.secondary};
   font-family: ${({ theme }) => theme.font.secondary};
-  font-size: 0.875rem;
+  font-size: ${fontSize.xs};
   line-height: 16px;
   text-transform: uppercase;
 `
@@ -22,7 +22,7 @@ export const StyledTag = styled.span`
 export const StyledHeading = styled.h2`
   margin-bottom: 19px;
   color: ${({ theme }) => theme.color.neutralLight};
-  font-size: 2rem;
+  font-size: ${fontSize.m};
   font-weight: 700;
   line-height: 40px;
 `
@@ -31,7 +31,7 @@ export const StyledDescription = styled.p`
   max-width: 410px;
   margin-bottom: 25px;
   color: ${({ theme }) => theme.color.neutralDark};
-  font-size: 1.125rem;
+  font-size: ${fontSize.s};
   line-height: 21px;
 `
 export const StyledPrice = styled.span`

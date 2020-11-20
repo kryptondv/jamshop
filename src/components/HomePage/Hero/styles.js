@@ -1,6 +1,6 @@
 import styled, { keyframes } from "styled-components"
 import HeroDecor from "~/assets/elements/hero_decor.svg"
-import { media, container } from "~/utils/cssVariables"
+import { media, container, fontSize } from "~/utils/cssVariables"
 
 const fadeUp = keyframes`
   0% {
@@ -23,6 +23,7 @@ export const StyledHero = styled.section`
   ${media.tablet} {
     margin: 0;
     padding-top: 200px;
+    background-size: 30%;
   }
 
   ${media.desktop} {
@@ -37,26 +38,25 @@ export const StyledHeading = styled.div`
   margin-bottom: 30px;
   color: ${({ theme }) => theme.color.neutral};
   font-family: ${({ theme }) => theme.font.heading};
-  font-size: 1.5rem;
+  font-size: ${fontSize.sm};
   font-weight: 700;
   line-height: 1.5;
 
   ${media.small} {
-    font-size: 2rem;
+    font-size: ${fontSize.m};
     line-height: 1.5;
   }
   ${media.tablet} {
-    font-size: 2rem;
     line-height: 1.5;
   }
 
   ${media.desktop} {
     padding-left: 0;
-    font-size: 3rem;
+    font-size: ${fontSize.l};
   }
 
   ${media.large} {
-    font-size: 3.5rem;
+    font-size: ${fontSize.xl};
   }
 
   &::after {

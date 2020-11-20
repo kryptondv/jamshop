@@ -12,3 +12,12 @@ export const container = css`
   max-width: 1400px;
   margin: 0 auto;
 `
+
+export const fontSize = {
+  xs: "0.875rem",
+  s: "1.125rem",
+  sm: "1.75rem",
+  m: "2.125rem",
+  l: "3rem",
+  xl: "3.5rem",
+}

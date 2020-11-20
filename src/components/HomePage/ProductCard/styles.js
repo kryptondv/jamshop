@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
-import { media } from "~/utils/cssVariables.js"
+import { media, fontSize } from "~/utils/cssVariables.js"
 
 export const StyledLink = styled((props) => <Link {...props} />)`
   position: relative;
@@ -41,7 +41,7 @@ export const StyledImg = styled.img`
 export const StyledHeading = styled.h3`
   margin-bottom: 5px;
   color: ${({ theme }) => theme.color.neutralLight};
-  font-size: 1.125rem;
+  font-size: ${fontSize.s};
   font-weight: 700;
   line-height: 22px;
   text-transform: uppercase;
@@ -51,7 +51,7 @@ export const StyledDescription = styled.p`
   max-width: 170px;
   margin-bottom: 20px;
   color: ${({ theme }) => theme.color.neutralDark};
-  font-size: 0.875rem;
+  font-size: ${fontSize.xs};
   line-height: 17px;
 
   ${media.small} {
