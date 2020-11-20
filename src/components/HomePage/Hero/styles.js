@@ -13,7 +13,7 @@ const fadeUp = keyframes`
 `
 
 export const StyledHero = styled.section`
-  height: 697px;
+  height: 695px;
   background-image: url(${(props) => props.background});
   background-repeat: no-repeat;
   background-position: right top;
@@ -33,8 +33,8 @@ export const StyledHero = styled.section`
 export const StyledHeading = styled.h1`
   position: relative;
   height: 127px;
-  margin-bottom: 33px;
-  padding-left: 34px;
+  margin-bottom: 30px;
+  padding-left: 35px;
   color: ${({ theme }) => theme.color.neutral};
   font-family: ${({ theme }) => theme.font.heading};
   font-size: 3rem;
@@ -81,7 +81,7 @@ export const StyledHeading = styled.h1`
   }
 `
 export const StyledImage = styled.img`
-  width: clamp(200px, 40vw, 393px);
+  width: clamp(200px, 40vw, 395px);
 `
 export const Container = styled.div`
   display: flex;
@@ -116,7 +116,7 @@ export const Right = styled.div`
   align-items: flex-start;
   width: 50%;
   height: 100%;
-  padding-left: 32px;
+  padding-left: 30px;
 
   @media (max-width: 940px) {
     padding-left: 0;

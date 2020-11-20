@@ -8,7 +8,7 @@ export const StyledLink = styled((props) => <Link {...props} />)`
   flex-direction: column;
   justify-content: space-between;
   width: 265px;
-  height: 273px;
+  height: 275px;
   padding: 32px 22px 22px 22px;
   border: 3px solid ${({ theme }) => theme.color.productCardBorder};
   border-radius: 2px;
@@ -42,7 +42,7 @@ export const StyledImg = styled.img`
 `
 
 export const StyledHeading = styled.h3`
-  margin-bottom: 3px;
+  margin-bottom: 5px;
   color: ${({ theme }) => theme.color.neutralLight};
   font-size: 1.125rem;
   font-weight: 700;
@@ -51,7 +51,7 @@ export const StyledHeading = styled.h3`
 `
 
 export const StyledDescription = styled.p`
-  max-width: 192px;
+  max-width: 190px;
   margin: 0;
   color: ${({ theme }) => theme.color.neutralDark};
   font-size: 0.875rem;

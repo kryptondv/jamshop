@@ -25,8 +25,8 @@ export const StyledCartOverlay = styled.div`
 export const StyledCart = styled.div`
   position: absolute;
   top: 59px;
-  width: 281px;
-  height: 276px;
+  width: 280px;
+  height: 275px;
   background: ${({ theme }) => theme.color.cartBackground};
   right: 0;
   border: 2px solid ${({ theme }) => theme.color.cartBorder};
@@ -54,15 +54,15 @@ export const ItemsContainer = styled.div`
 
   /* custom scrollbar */
   ::-webkit-scrollbar {
-    width: 6px;
+    width: 5px;
   }
   ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px ${({ theme }) => theme.color.primaryShadow};
-    -webkit-box-shadow: inset 0 0 6px
+    box-shadow: inset 0 0 5px ${({ theme }) => theme.color.primaryShadow};
+    -webkit-box-shadow: inset 0 0 5px
       ${({ theme }) => theme.color.primaryShadow};
   }
   ::-webkit-scrollbar-thumb {
-    box-shadow: inset 0 0 6px ${({ theme }) => theme.color.primary};
-    -webkit-box-shadow: inset 0 0 6px ${({ theme }) => theme.color.primary};
+    box-shadow: inset 0 0 5px ${({ theme }) => theme.color.primary};
+    -webkit-box-shadow: inset 0 0 5px ${({ theme }) => theme.color.primary};
   }
 `

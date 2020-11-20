@@ -2,20 +2,20 @@ import styled, { css } from "styled-components"
 
 const type = {
   big: css`
-    width: 146px;
+    width: 145px;
     height: 40px;
     line-height: 16px;
     font-size: 13px;
   `,
   small: css`
-    width: 89px;
-    height: 27px;
+    width: 90px;
+    height: 30px;
     line-height: 14px;
     font-size: 12px;
   `,
   round: css`
-    width: 44px;
-    height: 44px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     line-height: 37px;
     font-size: 32px;

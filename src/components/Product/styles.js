@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const StyledImg = styled.img`
-  width: 329px;
+  width: 330px;
 
   @media (max-width: 768px) {
     width: 40vw;
@@ -10,11 +10,11 @@ export const StyledImg = styled.img`
 `
 export const StyledTag = styled.span`
   display: block;
-  margin-bottom: 11px;
+  margin-bottom: 10px;
   color: ${({ theme }) => theme.color.secondary};
   font-family: ${({ theme }) => theme.font.secondary};
   font-size: 0.875rem;
-  line-height: 16;
+  line-height: 16px;
   text-transform: uppercase;
 `
 
@@ -23,7 +23,7 @@ export const StyledHeading = styled.h2`
   color: ${({ theme }) => theme.color.neutralLight};
   font-size: 2rem;
   font-weight: 700;
-  line-height: 37px;
+  line-height: 40px;
 `
 
 export const StyledDescription = styled.p`

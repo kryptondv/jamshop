@@ -8,7 +8,7 @@ export const StyledItem = styled.div`
 `
 
 export const StyledImg = styled.img`
-  width: 24px;
+  width: 25px;
   margin-right: 15px;
 `
 

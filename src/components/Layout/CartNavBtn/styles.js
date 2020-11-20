@@ -21,20 +21,20 @@ export const StyledIconContainer = styled.div`
 
 export const StyledChevron = styled((props) => <Chevron {...props} />)`
   position: absolute;
-  right: -18px;
+  right: -20px;
   transition: 0.2s ease-out;
   transform: ${({ flipped }) => (flipped ? "rotateX(180deg)" : "initial")};
 `
 
 export const StyledCounter = styled.span`
   position: absolute;
-  right: -4px;
+  right: -5px;
   top: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 12px;
-  height: 13px;
+  height: 12px;
   border-radius: 50%;
   background: ${({ active, theme }) => (active ? theme.color.counterActive : theme.color.counter)};
   font-family: ${({ theme }) => theme.font.secondary};
