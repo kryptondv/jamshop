@@ -45,6 +45,7 @@ export const StyledHeading = styled.h3`
   margin-bottom: 3px;
   color: ${({ theme }) => theme.color.neutralLight};
   font-size: 1.125rem;
+  font-weight: 700;
   line-height: 22px;
   text-transform: uppercase;
 `
@@ -54,6 +55,7 @@ export const StyledDescription = styled.p`
   margin: 0;
   color: ${({ theme }) => theme.color.neutralDark};
   font-size: 0.875rem;
+  line-height: 17px;
 
   @media (max-width: 380px) {
     max-width: 170px;

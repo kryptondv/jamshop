@@ -14,6 +14,7 @@ export const StyledTag = styled.span`
   color: ${({ theme }) => theme.color.secondary};
   font-family: ${({ theme }) => theme.font.secondary};
   font-size: 0.875rem;
+  line-height: 16;
   text-transform: uppercase;
 `
 
@@ -21,6 +22,7 @@ export const StyledHeading = styled.h2`
   margin-bottom: 19px;
   color: ${({ theme }) => theme.color.neutralLight};
   font-size: 2rem;
+  font-weight: 700;
   line-height: 37px;
 `
 

@@ -9,6 +9,7 @@ export const StyledHeading = styled.h2`
   margin-bottom: 20px;
   color: ${({ theme }) => theme.color.neutralLight};
   font-size: 1.75rem;
+  font-weight: 700;
   line-height: 34px;
 `
 export const StyledLead = styled.p`

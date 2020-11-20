@@ -38,6 +38,7 @@ export const StyledHeading = styled.h1`
   color: ${({ theme }) => theme.color.neutral};
   font-family: ${({ theme }) => theme.font.heading};
   font-size: 3rem;
+  font-weight: 700;
   line-height: 55px;
 
   @media (min-width: 1400px) {
