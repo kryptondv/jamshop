@@ -51,7 +51,7 @@ export const StyledHeading = styled.div`
   }
 
   ${media.desktop} {
-    padding-left: 0;
+    padding-left: 35px;
     font-size: ${fontSize.l};
   }
 
