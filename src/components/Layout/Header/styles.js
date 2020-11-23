@@ -7,7 +7,6 @@ export const StyledHeader = styled.header`
   position: absolute;
   top: 0;
   width: 100%;
-  height: 60px;
 `
 
 export const StyledInner = styled.div`
@@ -16,7 +15,7 @@ export const StyledInner = styled.div`
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  padding-right: 22px;
+  padding: 15px 20px 15px 0;
   ${media.tablet} {
     padding-right: 40px;
   }

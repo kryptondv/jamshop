@@ -1,4 +1,5 @@
 import styled, { keyframes } from "styled-components"
+import { container } from "~/utils/cssVariables.js"
 
 const fadeIn = keyframes`
   0% {
@@ -24,24 +25,22 @@ export const StyledCartOverlay = styled.div`
 
 export const StyledCart = styled.div`
   position: absolute;
-  top: 59px;
-  width: 280px;
-  height: 275px;
+  top: 60px;
+  min-width: 280px;
+  min-height: 275px;
   background: ${({ theme }) => theme.color.cartBackground};
   right: 0;
   border: 2px solid ${({ theme }) => theme.color.cartBorder};
   border-radius: 4px;
-  padding: 37px 30px 23px 19px;
+  padding: 40px 30px 25px 20px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 `
 
 export const Container = styled.div`
-  width: 90%;
-  max-width: 1480px;
+  ${container}
   height: 100%;
-  margin: 0 auto;
   position: relative;
 `
 export const ItemsContainer = styled.div`
